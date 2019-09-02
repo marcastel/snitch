@@ -1,0 +1,6516 @@
+{
+  "name": "ISLE Whitelist",
+  "description": "Allowed HTTP(S) targets for any process (and any user).",
+  "rules": [
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-addresses": "8.8.8.8"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "25.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "aboutcookies.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "accountkit.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "addtoany.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "addyosmani.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "admo.tv"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "adobe.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "adobe.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "aidaluu.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ain.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "airmailapp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "airtable.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "algolia.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "allmacworld.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "allrecipes.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "alternativeto.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "amara.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "amazon.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "apidae-tourisme.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "atmosphera.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "audacia-asso.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "auth0-extend.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "auth0.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "avclub.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ayoa.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "azure.net,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "azurewebsites.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "b-cdn.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bbb.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bbc.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bbcgoodfood.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bbci.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "beej.us"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bennadel.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "betterrugbycoaching.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bigcartel.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "billslater.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "binaryformations.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bing.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bit.ly"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "blogger.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bookchums.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bootstrapcdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "brentozar.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "brettterpstra.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "brew.sh,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bugherd.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bugsnag.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "bunnycdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "businessinsider.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "busymac.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ca-centrest.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "caf.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cafepress.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "calendly.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "callrail.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "calreply.net,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "canalblog.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "capterra-static.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "capterra.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "carrefour.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cc-pays-de-gex.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cdiscount.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cdn-image.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cdnjquery.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cdscdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cedexis.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "celnat.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "centremusicalatp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cessy-animations.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cf.ac.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "challes-les-eaux.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "channld.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "chargebee.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "chargebeestatic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "charliehebdo.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "chavagne.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "chbeer.de"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cinegex.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cinema-voltaire.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cisco.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cisdem.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "civiccomputing.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "civicuk.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cleirppa.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "clemson.edu"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cleveralgorithms.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cljdoc.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cloudflare.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cloudfront.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cloudinary.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cocoadevcentral.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "codesandbox.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "codevoyagers.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "coding-guidelines.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cognitoforms.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "colterreed.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "com.tr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "connatix.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "contentful.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "contentstack.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "contentstack.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cookiebanner.eu"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cookiebot.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cookiehub.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cookiehub.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cookielaw.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cookiepro.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cookmark.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "coreinfrastructure.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "coriolis-systems.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cotecine.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "createjs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "creativeedgesoftware.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "crisp.chat"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "crontab.guru,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "crossref.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "crossways.com.au"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "curtclifton.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "custhelp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "dartlang.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "datatables.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "deadbeatsw.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "deadspin.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "devdocs.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "digilibraries.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "digitalartsonline.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "digitaloceanspaces.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "disq.us"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "disqus.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "disquscdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "downloadfreepdf.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "doxygen.nl"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "dromadaire.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "drostatic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "duckdns.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "duckduckgo.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "duckware.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "duke.edu"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "dummyimage.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "e.akamai.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "eatmoore.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "eclipse.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ecole-musique-actuelle-gex.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ecoledemusiquegex.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "economacs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "edysoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "effectiveremotework.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "egghead.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "eloquentjavascript.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "eltima.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "enyojs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "equinux.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "esp.asso.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ethreemail.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "europrojects.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "evergreen.team"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "evergreens.com.ua"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "everythingcomputerscience.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "evolutionplus.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "facebook.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "facebook.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "faqs.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fastly.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fastnlight.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ferney-voltaire.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "filepi.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "filepicker.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "filestack.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "filestackapi.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "filestackcontent.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "financesonline.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "firstpoint.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fivetran.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "flightgear.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "flogo.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "flyinglogic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fnac.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fontawesome.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fontzone.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "force.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fossdaily.xyz"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "franklincovey.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "franklincovey.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "free-ebooks.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "free-management-ebooks.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freeboard.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freecomputerbooks.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freegeoip.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freerangecloud.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freetechbooks.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freeuk.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freron.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "frontendmasters.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fsdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ft.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "futurecdn.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "g2.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "g2crowd.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gamingway.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gartner.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gartner.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gaussianprocess.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gbdirect.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gcdn.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gcorelabs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "geotrust.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "getfreeebooks.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "getmiro.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "getsentry.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gettingthingsdone.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gex.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ggpht.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ghbtns.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ghost.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ghost.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "giphy.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "github.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "github.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "github.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "githubusercontent.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gitlab.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gitlab.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gitter.im"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gizmodo.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "godaddy.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "godoc.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "google-analytics.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "google.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "google.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "googleadservices.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "googleapis.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "googlesyndication.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "googletagmanager.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "googletagservices.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "googleusercontent.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "goqr.me"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gouv.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gramps-project.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gravatar.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gstatic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "guidetodatamining.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hanynet.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "haskell.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hellomedian.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "helmuthauser.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "helpscout.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "helpscout.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "herokuapp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hex.pm"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hockeyapp.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hsadspixel.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "html5box.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hunterdrilling.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ibb.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "icl-hk.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "icons8.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "identrust.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "imgbb.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "imgur.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "inakasoftware.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "infogram.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "informit.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "infusionsoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "intercom.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "intercom.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "intercomassets.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "intercomcdn.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "internetdefenseleague.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ipfind.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ipfind.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ipify.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ipstack.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "isle-cloud.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "isle.plus"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "issy.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "it-ebooks.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "it-ebooks.info"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "itbooks.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "iterm2.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ithemes.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "itmanagersinbox.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "itranslate.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "iubenda.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jardiland.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jaspersoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jetemmerde.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jezebel.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jhrs.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jivaro-models.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jivochat.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jivosite.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jixipix.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "joebuhlig.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "journaldesfemmes.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jquery.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jsdelivr.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jsdelivr.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "juicer.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kapeli.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kapeli.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "keap.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "keeweb.info,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "keycdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kicad-pcb.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kinja-img.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kinja.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kinstacdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kiosquemag.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "koala-app.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kotaku.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "kxcdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ladesk.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "laigu.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "laughingbirdsoftware.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "leaddyno.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "learnomnifocus.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "learnyouahaskell.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lefigaro.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "letsencrypt.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lever.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "libreoffice.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "licdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lifetimelearningcentre.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lifewire.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "linkedin.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "linkedin.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "linternaute.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "listbooks.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "listenloop.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "liu.se"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "live.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "liveagent.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "livechat-static.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "livechatinc.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "liveperson.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "liveperson.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "loggly.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "logicinvoice.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "loom.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lpages.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lua.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lynda.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mac-torrent-download.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "macsparky.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "macupdate.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "macworld.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "macworld.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mafamillezen.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mairie-cessy.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "maminfidu.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "manning.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mapbox.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mapetitemercerie.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "marcastel.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mariadb.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mariadb.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "marmiton.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mathjax.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "matrix.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "maven.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "maxcdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "medianova.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "micro.blog"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "microsoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "microsoft.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mijingo.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mirovideoconverter.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mixxx.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mjcgex.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mncdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "monday.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "motamem.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "msn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mydbr.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "myddleware.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mygeekdaddy.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mymailcheap.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "mysqlreports.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "nakhan.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "naturaforce.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "netlify.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "netnewswireapp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "neverbounce.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "newrelic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "nginx.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "nodebeginner.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "noms-tisses.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "nordnet.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "nrbook.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "nshipster.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "obdev.at"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "olark.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "omnifocus.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "omnifocus.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "onesignal.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "onetrust.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "opencollective.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "openedition.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "openstreetmap.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "optimole.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "oracle.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "orange.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "oreilly.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "osxdaily.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "oualline.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "over-blog-kiwi.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "over-blog.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ovh.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ovh.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ownyourbits.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "packagist.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "packt-cdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pagely.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "paminatelier.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pantheon.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pantheonsite.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "paperjs.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "paprikaapp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "patinfo.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "paypal.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "paypalobjects.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pcdn.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pcre.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pcworld.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pearsoncmg.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "perimeterx.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "perimeterx.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "phptr.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pinimg.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pippa.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pki.goog"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "placeholder.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "planetpdf.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "plyr.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "polyfill.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pragprog.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "pressidium.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "printfriendly.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "prismic.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "privacy-center.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "processout.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "prologue-numerique.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "purechat.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "purechatcdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "qrcode.online"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "qrserver.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "quali-cite.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "quotatextion.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "randu.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rapidssl.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ravenjs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "raygun.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "raygun.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "razorcms.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rdjarchitectes.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "realworldhaskell.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "recaffeinate.co"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "red-by-sfr.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "red-gate.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "reportico.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "reportserver.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rightnow.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "riot.im"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rocketbots.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rocketbots.io,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rosettastone.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rsms.me"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ru.lv"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rubygems.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rug.by"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rugbycoachweekly.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rugbyworldcup.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "runkit.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "runkitcdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "s-microsoft.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "s3-us-west-2.amazonaws.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "s3.amazonaws.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sabre.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "salesforceliveagent.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "samba.tv"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "saminfo.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sap.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "school.nz"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "scroll.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "seacloud.cc"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "seafile.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sentry.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sfdcstatic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "shareasale.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "shawnblanc.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sibelius.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sift.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "siftscience.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "signatu.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "simgbb.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "simpsonexecutivecoaching.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "skype.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "skype.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "skypeassets.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "skyscanner.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "slack-edge.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "slack-imgs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "slack.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "slackb.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "slmarinainn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "smartling.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "snapchat.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sndcdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "snip.ly"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "solarwinds.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "soundcloud.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sourceforge.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "spagobi.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "speedcurve.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "squarecdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "squared5.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "squarespace-cdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "squarespace.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "squareup.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "stackoverflow.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "stackpath.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "startaylor.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "state.gov"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "statuspage.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "steampowered.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "steveheller.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "storyblok.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "strath.ac.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "stripe.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "stripe.network"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "stripecdn.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sumologic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "surveymonkey.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "swaychat.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "swayio.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "swiftype.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "synbird.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "syniumsoftware.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "takeshape.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "talktalk.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "talktalk.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "talkus.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tameteo.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tamgrt.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tawk.to"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "techadvisor.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "techguylabs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "technipages.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "techotopia.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "telesco.pe"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "thanks.io"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "thebrianpye.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "theletterapp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "theuntitledsite.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tikitrackers.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "titanium-software.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "toodarkpark.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "topfreebooks.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tous-logos.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "trackjs.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tripadvisor.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "troisfoisparjour.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "trustarc.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "truste-svc.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "truste.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "truvid.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "truvidplayer.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ttgtmedia.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ttxm.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tukif.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tukif.love"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tvsquared.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "tweetenapp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "twimg.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "twitter.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "typeform.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "typography.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ubc.ca"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ucarecdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ucl.ac.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "uiuc.edu"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ul.to"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "unbounce.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "uni-dortmund.de"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "universalsubtitles.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "unpkg.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "uow.edu.au"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "uploadcare.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "uploaded.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "us-east-1.amazonaws.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "useloom.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "user10.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "utexas.edu"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "veeam.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "velocitize.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "veritrope.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "versoix.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ville-geneve.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ville-rieumes.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "vimr.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "virbcdn.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "visualstudio.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "vk.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "vos.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "vuevixens.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "vuze.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "w.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "w3.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "walmart.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "walmartimages.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "webfactional.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "webflow.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wemfbox.ch"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wifiradarpro.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wikipedia.org,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wilmaa.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wisepops.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wix.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wixapps.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wixstatic.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wonderhowto.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wordpress.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wordpress.org,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "worksmartandberemarkable.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "worldrugby.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wowanalytics.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wp.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wp.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wpengine.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "wunderground.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "x2engine.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "xahlee.info"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "xlinesoft.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "xtuple.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "xtuple.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "yahoo.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "yahooapis.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "yandex.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "yandex.ru"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "yastatic.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "youtube.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "zapier.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "zdbb.net"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ziffdavis.com,"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "zim-wiki.org"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "zippopotam.us"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "zurb.com"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-hosts": "assistance.sfr.fr"
+    },
+    {
+      "action": "allow",
+      "ports": [
+        "80",
+        "443"
+      ],
+      "process": "any",
+      "protocol": "tcp",
+      "remote-hosts": "www.postbox-inc.com"
+    }
+  ]
+}
