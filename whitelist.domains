@@ -1,7 +1,8 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2019-09-02 (Mon) 06:14:09
+#! @revision 2019-09-02 (Mon) 06:39:53
 
 25.io
+9to5mac.com
 aboutcookies.org
 accountkit.com
 addtoany.com
@@ -9,6 +10,9 @@ addyosmani.com
 admo.tv
 adobe.com
 adobe.io
+agenziasit.it
+agenziasit.reweb.info
+ahcdn.com
 aidaluu.com
 ain.fr
 airmailapp.com
@@ -16,15 +20,19 @@ airtable.com
 algolia.net
 allmacworld.com
 allrecipes.co.uk
+alternativepedia.com
 alternativeto.net
 amara.org
 amazon.com
+amazonaws.com
 apidae-tourisme.com
 atmosphera.com
 audacia-asso.fr
 auth0-extend.com
 auth0.com
 avclub.com
+aws.amazon.com
+awsstatic.com
 ayoa.com
 azure.net,
 azurewebsites.net
@@ -41,12 +49,14 @@ billslater.com
 binaryformations.com
 bing.com
 bit.ly
+bitly.com
 blogger.com
 bookchums.com
 bootstrapcdn.com
 brentozar.com
 brettterpstra.com
 brew.sh,
+brewformulas.org
 bugherd.com
 bugsnag.com
 bunnycdn.com
@@ -65,7 +75,9 @@ carrefour.fr
 cc-pays-de-gex.fr
 cdiscount.com
 cdn-image.com
+cdn.optimizely.com
 cdnjquery.com
+cdnjs.com
 cdscdn.com
 cedexis.com
 celnat.fr
@@ -114,6 +126,7 @@ coreinfrastructure.org
 coriolis-systems.com
 cotecine.fr
 createjs.com
+creativecommons.org
 creativeedgesoftware.com
 crisp.chat
 crontab.guru,
@@ -121,6 +134,7 @@ crossref.org
 crossways.com.au
 curtclifton.net
 custhelp.com
+dailymotion.com
 dartlang.org
 datatables.net
 deadbeatsw.com
@@ -129,6 +143,7 @@ devdocs.io
 digilibraries.com
 digitalartsonline.co.uk
 digitaloceanspaces.com
+discourse.org
 disq.us
 disqus.com
 disquscdn.com
@@ -172,6 +187,7 @@ filepicker.io
 filestack.com
 filestackapi.com
 filestackcontent.com
+filmwords.com
 financesonline.com
 firstpoint.ch
 fivetran.com
@@ -183,11 +199,14 @@ fontawesome.com
 fontzone.net
 force.com
 fossdaily.xyz
+franceinfo.fr
+francetvinfo.fr
 franklincovey.com
 franklincovey.com,
 free-ebooks.net
 free-management-ebooks.com
 freeboard.io
+freebsd.org
 freecomputerbooks.com
 freegeoip.net
 freerangecloud.com
@@ -209,6 +228,7 @@ gcdn.co
 gcorelabs.com
 geotrust.com
 getfreeebooks.com
+getgrav.org
 getmiro.com
 getsentry.net
 gettingthingsdone.co
@@ -226,8 +246,10 @@ gitlab.com
 gitlab.io
 gitter.im
 gizmodo.com
+gnu.org
 godaddy.com
 godoc.org
+golang.org
 google-analytics.com
 google.com
 google.fr
@@ -252,9 +274,11 @@ helpscout.net
 herokuapp.com
 hex.pm
 hockeyapp.net
+hola.org
 hsadspixel.net
 html5box.com
 hunterdrilling.com
+iana.org
 ibb.co
 icl-hk.com
 icons8.com
@@ -274,9 +298,14 @@ ipfind.co
 ipfind.com
 ipify.org
 ipstack.com
+iptv.ch
 isle-cloud.ch
+isle-cloud.com
+isle-cloud.eu
+isle-consultants.com
 isle.plus
 issy.com
+it-courtier.org
 it-ebooks.com
 it-ebooks.info
 itbooks.net
@@ -294,6 +323,7 @@ jivaro-models.org
 jivochat.com
 jivosite.com
 jixipix.com
+jodah.net
 joebuhlig.com
 journaldesfemmes.fr
 jquery.com
@@ -310,9 +340,12 @@ kinja-img.com
 kinja.com
 kinstacdn.com
 kiosquemag.com
+kiwisyslog.com
 koala-app.com
+kornshell.com
 kotaku.com
 kxcdn.com
+la-sangliere.com
 ladesk.com
 laigu.net
 laughingbirdsoftware.com
@@ -374,6 +407,7 @@ mjcgex.fr
 mncdn.com
 monday.com
 motamem.org
+mozilla.org
 msn.com
 mydbr.com
 myddleware.com
@@ -381,12 +415,15 @@ mygeekdaddy.net
 mymailcheap.com
 mysqlreports.com
 nakhan.net
+namecheap.com
 naturaforce.com
 netlify.com
 netnewswireapp.com
 neverbounce.com
 newrelic.com
+nextcloud.org
 nginx.org
+nmap.org
 nodebeginner.org
 noms-tisses.fr
 nordnet.com
@@ -426,9 +463,14 @@ paypalobjects.com
 pcdn.co
 pcre.org
 pcworld.com
+pearlharborhistoricsites.org
 pearsoncmg.com
 perimeterx.com
 perimeterx.net
+perl.org
+perl6.org
+perl6intro.com
+perlmonks.org
 phptr.com
 pinimg.com
 pippa.io
@@ -461,6 +503,7 @@ realworldhaskell.org
 recaffeinate.co
 red-by-sfr.fr
 red-gate.com
+redis.io
 reportico.org
 reportserver.net
 rightnow.com
@@ -470,6 +513,7 @@ rocketbots.io,
 rosettastone.com
 rsms.me
 ru.lv
+ruby-php.org
 rubygems.org
 rug.by
 rugbycoachweekly.net
@@ -477,8 +521,6 @@ rugbyworldcup.com
 runkit.com
 runkitcdn.com
 s-microsoft.com,
-s3-us-west-2.amazonaws.com
-s3.amazonaws.com
 sabre.io
 salesforceliveagent.com
 samba.tv
@@ -521,6 +563,8 @@ squared5.com
 squarespace-cdn.com
 squarespace.com
 squareup.com
+ssl-images-amazon.com
+stackexchange.com
 stackoverflow.com
 stackpath.com
 startaylor.net
@@ -546,6 +590,7 @@ talktalk.co.uk
 talkus.io
 tameteo.com
 tamgrt.com
+taskwarrior.org
 tawk.to
 techadvisor.co.uk
 techguylabs.com
@@ -561,6 +606,8 @@ titanium-software.fr
 toodarkpark.net
 topfreebooks.org
 tous-logos.com
+tpg.ch
+tpg.hafas.de
 trackjs.com
 tripadvisor.com
 troisfoisparjour.com
@@ -577,7 +624,9 @@ tvsquared.com
 tweetenapp.com
 twimg.com
 twitter.com
+twittercommunity.com
 typeform.com
+typekit.net
 typography.com
 ubc.ca
 ucarecdn.com
@@ -587,11 +636,11 @@ ul.to
 unbounce.com
 uni-dortmund.de
 universalsubtitles.org
+unix.com
 unpkg.com
 uow.edu.au
 uploadcare.com
 uploaded.net
-us-east-1.amazonaws.com
 useloom.com
 user10.com
 utexas.edu
@@ -601,6 +650,7 @@ veritrope.com
 versoix.ch
 ville-geneve.ch
 ville-rieumes.fr
+vim.org
 vimr.org
 virbcdn.com
 visualstudio.com,
@@ -615,8 +665,12 @@ walmartimages.com
 webfactional.com
 webflow.com
 wemfbox.ch
+whitequark.org
 wifiradarpro.com
+wikihow.com
+wikipedia.org
 wikipedia.org,
+wikitravel.org
 wilmaa.com
 wisepops.com
 wix.com
@@ -632,6 +686,7 @@ wp.com
 wp.com,
 wpengine.com
 wunderground.com
+www.pearlharborhistoricsites.org
 x2engine.com
 xahlee.info
 xlinesoft.com
