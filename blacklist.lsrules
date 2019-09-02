@@ -1,0 +1,5 @@
+{
+    "name": "ISLE Blacklist",
+    "description": "Blocks advertising and analytics servers.",
+    "denied-remote-domains": ["facebook.com", "twitter.com", "youtube.com"]
+}
