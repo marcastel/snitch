@@ -57,3 +57,4 @@ a) installing Little Snitch on my MacBooks,
 b) only allowing SSH access from my MacBooks to other platforms (Linux, Windows), and
 c) denying automated connextion from smartphones which are the most unsafe platforms in the world.
 
+  [little snitch]: https://www.obdev.at/index.html
