@@ -56,7 +56,7 @@ function print_allowed {
             typeset comma=','; (( -- count > 0 )) || comma=
 
             # Output the JSON line
-            printf "$fmt\n$fmt$comma\n" 80 $file $line 443 $file $line
+            printf "$fmt,\n$fmt$comma\n" 80 $file $line 443 $file $line
 
         done
 
@@ -121,10 +121,14 @@ function print_header {
 
 }
 
-build_whitelist
-build_blacklist
+enum boolean=( false true ); boolean show_usage=true
 
-git commit -am "=$(printf 'Updates %(%F [%a] %R)T.')"
-git push
+[[ -n $1 && $1 == @(all|blacklist) ]] && { show_usage=false; build_blacklist; }
+[[ -n $1 && $1 == @(all|whitelist) ]] && { show_usage=false; build_whitelist; }
+
+(( show_usage == false )) && exit 0.
+
+print "usage: ${0##*/} [ blacklist | whitelist | all ]"
+exit 2
 
 # vim: nospell spelllang=en
