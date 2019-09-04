@@ -9,6 +9,6 @@ whitelist:
 	./build.sh whitelist
 
 commit:
-	git commit -am "$$(printf 'Updates %(%F [%a] %R)T.')"
+	git commit -m "$$(printf 'Updates %(%F [%a] %R)T.')" *
 	git push
 

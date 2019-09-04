@@ -1,0 +1,30 @@
+{
+  "name" : "ISLE NoUpdate",
+  "description" : "Disable selected applications from calling home all the time",
+  "rules" : [
+    {
+      "action" : "deny",
+      "creationDate" : 1566376097.168164,
+      "modificationDate" : 1566376097.168164,
+      "owner" : "me",
+      "process" : "\/Applications\/OmniFocus.app\/Contents\/MacOS\/OmniFocus",
+      "remote-domains" : "omnigroup.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566524220.6686611,
+      "modificationDate" : 1566524220.6686611,
+      "owner" : "me",
+      "process" : "\/Applications\/OmniGraffle.app\/Contents\/MacOS\/OmniGraffle",
+      "remote-domains" : "omnigroup.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566922298.0011702,
+      "modificationDate" : 1566933369.39082,
+      "owner" : "me",
+      "process" : "\/Applications\/OmniOutliner.app\/Contents\/MacOS\/OmniOutliner",
+      "remote-domains" : "omnigroup.com"
+    }
+  ]
+}
