@@ -1,6 +1,7 @@
 #! @brief    Whitelisted host names
-#! @revision 2019-09-02 (Mon) 06:40:42
+#! @revision 2019-09-04 (Wed) 13:17:35
 
+api.apple-cloudkit.com
 api.mytf1.tf1.fr
 api.optnmstr.com
 assets.pinterest.com
