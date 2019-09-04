@@ -6,7 +6,7 @@ My [Little Snitch] rulesets for shared configurations across workstations.
 | --------- | ---------------------- | ----------------------------------------------------------------------------------------- |
 | Blacklist | https://bit.ly/2MQukhj | Deny HTTP(S) access to those numerous invasive services (ads, geolocation, analytics, …)  |
 | Whitelist | https://bit.ly/2zK1NSk | Allow access to websites -- this is probably only usefull for me :smile:                  |
-| NoUpdate  |                        | Let's me decide when applications are allowed to call home (e.g. for updates)             |
+| NoUpdate  | https://bit.ly/2ku1syP | Let's me decide when applications are allowed to call home (e.g. for updates)             |
 
 These lists need to be constantly updated... and this work has to be done manually -- or at least I have not found the algorithm
 to automatically do that work! This is my procedure to detect and flag sites to be blacklisted (and whitelisted).
