@@ -1,4 +1,6 @@
-#!/bin/ksh
+#! /bin/ksh
+#! @brief Build black/white lists
+#! @revision 2019-09-04 (Wed) 14:38:48
 
 typeset jq='jq .'; whence -q jq || jq=cat
 
