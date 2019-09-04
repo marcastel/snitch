@@ -20,7 +20,8 @@ function build_whitelist {
 
 function print_allowed {
 
-    typeset fmt='{ "action" : "allow", "ports" : [ "80", "443" ], "process" : "any", "protocol" : "tcp", "remote-%s" : "%s" }'
+    typeset fmt='{ "action" : "allow", "ports" : "%s", "process" : "any", "protocol" : "tcp", "remote-%s" : "%s" }'
+    #ypeset fmt='{ "action" : "allow", "ports" : [ "80", "443" ], "process" : "any", "protocol" : "tcp", "remote-%s" : "%s" }'
     integer count=0; typeset all=( addresses domains hosts )
 
     # Determine the number of entries that we will process
@@ -55,7 +56,7 @@ function print_allowed {
             typeset comma=','; (( -- count > 0 )) || comma=
 
             # Output the JSON line
-            printf "$fmt$comma\n" $file $line
+            printf "$fmt\n$fmt$comma\n" 80 $file $line 443 $file $line
 
         done
 
