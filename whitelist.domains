@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2019-09-04 (Wed) 14:37:41
+#! @revision 2019-09-04 (Wed) 14:42:43
 
 1stwebdesigner.com
 24heures.ch
@@ -1213,5 +1213,6 @@ zopim.com
 zotero.org
 zuora.com
 zurb.com
+itcourtier.org
 
 # vim: nospell spelllang=en

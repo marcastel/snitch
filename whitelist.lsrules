@@ -17031,6 +17031,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "itcourtier.org"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "itcourtier.org"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-hosts": "api.apple-cloudkit.com"
     },
     {
