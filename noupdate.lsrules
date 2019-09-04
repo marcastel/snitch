@@ -25,6 +25,349 @@
       "owner" : "me",
       "process" : "\/Applications\/OmniOutliner.app\/Contents\/MacOS\/OmniOutliner",
       "remote-domains" : "omnigroup.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567122755.365247,
+      "modificationDate" : 1567122755.365247,
+      "owner" : "me",
+      "process" : "\/Applications\/Adobe Animate CC 2019\/Adobe Animate 2019.app\/Contents\/MacOS\/Adobe Animate 2019",
+      "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566511775.7798362,
+      "modificationDate" : 1566511775.7798362,
+      "owner" : "me",
+      "process" : "\/Library\/Application Support\/Adobe\/Adobe Desktop Common\/ADS\/Adobe Desktop Service.app\/Contents\/MacOS\/Adobe Desktop Service",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566198212.3875399,
+      "modificationDate" : 1566198212.3875399,
+      "owner" : "me",
+      "process" : "\/Applications\/Adobe Illustrator CC 2019\/Adobe Illustrator.app\/Contents\/MacOS\/Adobe Illustrator",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566814173.8193731,
+      "modificationDate" : 1566814173.8193731,
+      "owner" : "me",
+      "process" : "\/Applications\/Adobe Photoshop CC 2019\/Adobe Photoshop CC 2019.app\/Contents\/MacOS\/Adobe Photoshop CC 2019",
+      "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566814134.3091478,
+      "modificationDate" : 1566814134.3091478,
+      "owner" : "me",
+      "process" : "\/Applications\/Adobe Photoshop CC 2019\/Adobe Photoshop CC 2019.app\/Contents\/MacOS\/Adobe Photoshop CC 2019",
+      "remote-domains" : "typekit.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566275716.1880479,
+      "modificationDate" : 1566275716.1880479,
+      "owner" : "me",
+      "process" : "\/Applications\/Araxis Merge.app\/Contents\/MacOS\/Araxis Merge",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566281220.1812968,
+      "modificationDate" : 1566281220.1812968,
+      "owner" : "me",
+      "process" : "\/Applications\/Artlantis 2019\/Artlantis.app\/Contents\/MacOS\/Artlantis",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567343556.5253959,
+      "modificationDate" : 1567343556.5253959,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Applications\/Banktivity 7.app\/Contents\/MacOS\/Banktivity 7",
+      "protocol" : "tcp",
+      "remote-domains" : "iggnetservices.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567343143.532582,
+      "modificationDate" : 1567343143.532582,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Applications\/Banktivity 7.app\/Contents\/MacOS\/Banktivity 7",
+      "protocol" : "tcp",
+      "remote-domains" : "iggsoft.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567343550.467206,
+      "modificationDate" : 1567343550.467206,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Applications\/Banktivity 7.app\/Contents\/MacOS\/Banktivity 7",
+      "protocol" : "tcp",
+      "remote-domains" : "iggsoftware.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566278227.8624101,
+      "modificationDate" : 1566278227.8624101,
+      "owner" : "me",
+      "process" : "\/Applications\/Beyond Compare.app\/Contents\/MacOS\/BCompare",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567410824.2069201,
+      "modificationDate" : 1567410866.7544041,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/MacOS\/BusyCal",
+      "protocol" : "tcp",
+      "remote-domains" : "darksky.net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566571313.801039,
+      "modificationDate" : 1566571313.801039,
+      "owner" : "me",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/MacOS\/BusyCal",
+      "remote-domains" : "busymac.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566571304.1906869,
+      "modificationDate" : 1566571304.1906869,
+      "owner" : "me",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/MacOS\/BusyCal",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566571333.7916079,
+      "modificationDate" : 1566571333.7916079,
+      "owner" : "me",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/Library\/LoginItems\/N4RA379GBW.com.busymac.busycal3.alarm.app\/Contents\/MacOS\/N4RA379GBW.com.busymac.busycal3.alarm",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566569188.5003991,
+      "modificationDate" : 1566569188.5003991,
+      "owner" : "me",
+      "process" : "\/Applications\/BusyContacts.app\/Contents\/MacOS\/BusyContacts",
+      "remote-domains" : "busymac.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566569166.8780909,
+      "modificationDate" : 1566569166.8780909,
+      "owner" : "me",
+      "process" : "\/Applications\/BusyContacts.app\/Contents\/MacOS\/BusyContacts",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566486095.8127708,
+      "modificationDate" : 1566486095.8127708,
+      "owner" : "me",
+      "process" : "\/Applications\/Carbon Copy Cloner.app\/Contents\/MacOS\/Carbon Copy Cloner",
+      "remote-domains" : "bombich.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566198238.356813,
+      "modificationDate" : 1566198238.356813,
+      "owner" : "me",
+      "process" : "\/Applications\/Adobe Illustrator CC 2019\/Adobe Illustrator.app\/Contents\/MacOS\/CEPHtmlEngine\/CEPHtmlEngine.app\/Contents\/MacOS\/CEPHtmlEngine",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566814167.7285771,
+      "modificationDate" : 1566814167.7285771,
+      "owner" : "me",
+      "process" : "\/Applications\/Adobe Photoshop CC 2019\/Adobe Photoshop CC 2019.app\/Contents\/MacOS\/CEPHtmlEngine.app\/Contents\/MacOS\/CEPHtmlEngine",
+      "remote-domains" : "adobe.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566563140.9129801,
+      "modificationDate" : 1566563544.707706,
+      "owner" : "me",
+      "process" : "\/Applications\/Cisdem PDF Converter OCR.app\/Contents\/MacOS\/Cisdem PDF Converter OCR",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1567583554.115104,
+      "disabled" : true,
+      "modificationDate" : 1567583554.115104,
+      "owner" : "me",
+      "process" : "\/System\/Library\/PrivateFrameworks\/SafariSafeBrowsing.framework\/Versions\/A\/com.apple.Safari.SafeBrowsing.Service",
+      "remote-domains" : "googleapis.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566564478.477443,
+      "modificationDate" : 1566564478.477443,
+      "owner" : "me",
+      "process" : "\/Applications\/Dash.app\/Contents\/MacOS\/Dash",
+      "remote-domains" : "hockeyapp.net"
+    },
+    {
+      "action" : "ask",
+      "creationDate" : 1566564465.171032,
+      "modificationDate" : 1566597680.1176729,
+      "owner" : "me",
+      "process" : "\/Applications\/Dash.app\/Contents\/MacOS\/Dash",
+      "remote-domains" : "kapeli.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566933519.5365419,
+      "modificationDate" : 1566933519.5365419,
+      "owner" : "me",
+      "process" : "\/Applications\/Direct Mail.app\/Contents\/MacOS\/Direct Mail",
+      "remote-domains" : "cloudfront.net"
+    },
+    {
+      "action" : "ask",
+      "creationDate" : 1566821443.815254,
+      "modificationDate" : 1566822099.2537,
+      "owner" : "me",
+      "process" : "\/Applications\/Direct Mail.app\/Contents\/MacOS\/Direct Mail",
+      "remote-domains" : "directmailmac.com"
+    },
+    {
+      "action" : "ask",
+      "creationDate" : 1566821434.3410869,
+      "modificationDate" : 1566822172.638447,
+      "owner" : "me",
+      "process" : "\/Applications\/Direct Mail.app\/Contents\/MacOS\/Direct Mail",
+      "remote-domains" : "ethreemail.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566517136.577836,
+      "modificationDate" : 1566517136.577836,
+      "owner" : "me",
+      "process" : "\/Applications\/MacFamilyTree 9.app\/Contents\/MacOS\/MacFamilyTree 9",
+      "remote-domains" : "syniumsoftware.com"
+    },
+    {
+      "action" : "allow",
+      "creationDate" : 1566167752.867692,
+      "modificationDate" : 1566167752.867692,
+      "owner" : "me",
+      "process" : "\/Applications\/Mail.app\/Contents\/MacOS\/Mail",
+      "remote-domains" : "mymailcheap.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566223660.368212,
+      "modificationDate" : 1566223660.368212,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Applications\/Mail.app\/Contents\/MacOS\/Mail",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567351137.7687201,
+      "modificationDate" : 1567351137.7687201,
+      "owner" : "me",
+      "ports" : "80",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "protocol" : "tcp",
+      "remote-domains" : "paprikaapp.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567351198.739404,
+      "modificationDate" : 1567351198.739404,
+      "owner" : "me",
+      "ports" : "443",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "protocol" : "tcp",
+      "remote-domains" : "paprikaapp.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567295860.0405359,
+      "modificationDate" : 1567295860.0405359,
+      "owner" : "me",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "remote-domains" : "hockeyapp.net"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567296753.73174,
+      "modificationDate" : 1567296753.73174,
+      "owner" : "me",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "remote-domains" : "inskinad.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567295845.3791962,
+      "modificationDate" : 1567295845.3791962,
+      "owner" : "me",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "remote-domains" : "paddleapi.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566895687.116461,
+      "modificationDate" : 1566895687.116461,
+      "owner" : "me",
+      "process" : "\/Applications\/SketchUp 2019\/SketchUp.app\/Contents\/MacOS\/SketchUp",
+      "remote-domains" : "google.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566895677.5713091,
+      "modificationDate" : 1566895677.5713091,
+      "owner" : "me",
+      "process" : "\/Applications\/SketchUp 2019\/SketchUp.app\/Contents\/MacOS\/SketchUp",
+      "remote-domains" : "sketchup.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566928876.1060691,
+      "modificationDate" : 1566934310.2091289,
+      "owner" : "me",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "remote-domains" : "bugsnag.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567118267.3693571,
+      "modificationDate" : 1567118267.3693571,
+      "owner" : "me",
+      "process" : "\/Applications\/TweetDeck.app\/Contents\/MacOS\/TweetDeck",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1567118282.002522,
+      "modificationDate" : 1567118282.002522,
+      "owner" : "me",
+      "process" : "\/Applications\/TweetDeck.app\/Contents\/MacOS\/TweetDeck",
+      "remote-domains" : "google-analytics.com"
+    },
+    {
+      "action" : "deny",
+      "creationDate" : 1566447392.40012,
+      "modificationDate" : 1566447392.40012,
+      "owner" : "me",
+      "process" : "\/Applications\/Typeface.app\/Contents\/MacOS\/Typeface",
+      "remote" : "any"
     }
   ]
 }
