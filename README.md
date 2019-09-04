@@ -42,19 +42,21 @@ _NoUpdate_ ruleset to update the selected software; and once the udpate done, re
 
 <hr>
 
-<a name='google'><sup>1</sup></a>:
+<a name='google'><sup>1</sup></a>
 I use a custom shell script to perform Google searches, so as to strip off all the click and URL tracing.
 
-<a name='macos'><sup>2</sup></a>: Rulesets were introduced in Little Snitch versino 4. Before that I managed the aforementioned
-lists using more complex shell scripts that allowed to cut & paste rules to/from Little Snitch -- including operating system
-rules. Since the introduction of these very usefull rulesets, Little Snitch has also introduced two default rulesets (i.e. _iCloud
-services_, and _macOS services); I keep those rulesets disabled in most cases.
+<a name='macos'><sup>2</sup></a>
+Rulesets were introduced in Little Snitch versino 4. Before that I managed the aforementioned lists using more complex shell
+scripts that allowed to cut & paste rules to/from Little Snitch -- including operating system rules. Since the introduction of
+these very usefull rulesets, Little Snitch has also introduced two default rulesets (i.e. _iCloud services_, and _macOS services);
+I keep those rulesets disabled in most cases.
 
-<a name='updates'><sup>3</sup></a>: Most security _experts_ say you should regularly update your software for security patches.
-This is a bad practice. If you have secured your Internet connexion then you are safe. Securing my Internet connexion consists in
+<a name='updates'><sup>3</sup></a>
+Most security _experts_ say you should regularly update your software for security patches. This is a bad practice. If you have
+secured your Internet connexion then you are safe. Securing my Internet connexion consists in
 
-a) installing Little Snitch on my MacBooks,
-b) only allowing SSH access from my MacBooks to other platforms (Linux, Windows), and
-c) denying automated connextion from smartphones which are the most unsafe platforms in the world.
+-   installing Little Snitch on my MacBooks,
+-   only allowing SSH access from my MacBooks to other platforms (Linux, Windows), and
+-   denying automated connextion from smartphones which are the most unsafe platforms in the world.
 
   [little snitch]: https://www.obdev.at/index.html
