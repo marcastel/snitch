@@ -120,7 +120,10 @@ function print_header {
 
 }
 
-#build_whitelist
+build_whitelist
 build_blacklist
+
+git commit -am "=$(printf 'Updates %(%F [%a] %R)T.')"
+git push
 
 # vim: nospell spelllang=en

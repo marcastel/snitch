@@ -1,4 +1,4 @@
-#! @revision 2019-09-02 (Mon) 06:38:15
+#! @revision 2019-09-04 (Wed) 10:13:01
 #! @brief    Blacklisted domains
 
 101com.com
@@ -16,6 +16,7 @@
 33across.com
 360yield.com
 3gl.net
+3lift.com
 4-tell.net
 4affiliate.net
 4d5.net
@@ -302,6 +303,7 @@ adxvalue.com
 adyea.com
 adzerk.net
 adzones.com
+afcdn.com
 afeld.me
 affbuzzads.com
 affilae.com
@@ -412,6 +414,7 @@ bannertesting.com
 bannery.cz
 basebanner.com
 basis.net
+batch.com
 baynote.net
 baypops.com
 bbbpromos.org
@@ -571,6 +574,7 @@ cj.com
 cjbmanagement.com
 cjlog.com
 claria.com
+clearbit.com
 clearcode.cc
 click2freemoney.com
 click2paid.com
@@ -623,6 +627,7 @@ clustrmaps.com
 cmpstar.com
 cnomy.com
 codeblackbelt.com
+coll2onf.com
 colonize.com
 comclick.com
 commander1.com
@@ -673,11 +678,13 @@ cqcounter.com
 crakmedia.com
 craktraffic.com
 crawlability.com
+crazyegg.com
 crazypopups.com
 createsend1.com
 creative-serving.com
 crispads.com
 criteo.com
+criteo.net
 critizr.com
 crowdgravity.com
 crowdsignal.com
@@ -1097,6 +1104,8 @@ instapage.com
 intelliads.com
 intellimize.co
 intellitxt.com
+intercomassets.com
+intercomcdn.com
 intergi.com
 internetfuel.com
 internettraffic.click
@@ -2171,5 +2180,6 @@ zopim.com
 zopim.io
 zugnogne.com
 zuora.com
+
 
 # vim: nospell
