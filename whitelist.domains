@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2019-09-06 (Fri) 16:44:17
+#! @revision 2019-09-06 (Fri) 16:44:54
 
 1stwebdesigner.com
 24heures.ch
@@ -257,6 +257,7 @@ dailymotion.com
 dartlang.org
 datadoghq.com
 datafire.io
+datamation.com
 datatables.net
 davx5.com
 dbakevlar.com
@@ -303,6 +304,7 @@ duke.edu
 dummyimage.com
 e-junkie.com
 e.akamai.net
+easyvoyage.com
 eatmoore.com
 ebay.com
 eclecticlight.co
@@ -338,6 +340,7 @@ evernote.com
 everythingcomputerscience.com
 evidon.com
 evolutionplus.ch
+example.com
 facebook.com
 facebook.net
 faqs.org
@@ -363,10 +366,13 @@ flexibits.com
 flickr.com
 flightgear.org
 flightradar24.com
+flip.it
+flipboard.com
 flogo.io
 flyinglogic.com
 fna.fbcdn.net
 fnac-static.com
+fnac.be
 fnac.com
 fontawesome.com
 fontzone.net
@@ -384,6 +390,7 @@ freeboard.io
 freebsd.org
 freecadweb.org
 freecomputerbooks.com
+freedesktop.org
 freegeoip.net
 freerangecloud.com
 freetechbooks.com
@@ -393,6 +400,7 @@ fritzing.org
 frontendmasters.com
 fsdn.com
 ft.com
+fury.io
 futura-sciences.com
 futurecdn.net
 g2.com
@@ -405,6 +413,7 @@ gaussianprocess.org
 gbdirect.co.uk
 gcdn.co
 gcorelabs.com
+gemfury.com
 genius.com
 geotrust.com
 getcleaver.com
@@ -458,9 +467,11 @@ goqr.me
 gouv.fr
 gramps-project.org
 grands-meres.net
+graphicpear.com
 graphviz.org
 gravatar.com
 greatsampleresume.com
+grenierdeslegendes.info
 groupecouleur.com
 groupme.com
 gstatic.com
@@ -485,6 +496,9 @@ herokucdn.com
 hex.pm
 hockeyapp.net
 hola.org
+homeadvisor.com
+howtoforge.com
+howtospecialist.com
 hsadspixel.net
 html5box.com
 httpie.org
@@ -492,6 +506,7 @@ hunterdrilling.com
 hyper.is
 hypotheses.org
 iana.org
+iaqm.com
 ibb.co
 icl-hk.com
 icloud.com
@@ -511,6 +526,7 @@ indepth.com
 infogram.com
 informer.com
 informit.com
+infoworld.com
 infusionsoft.com
 inlinks.net
 insmac.org
@@ -521,6 +537,7 @@ intercomassets.com
 intercomcdn.com
 interestingengineering.com
 internetdefenseleague.org
+internetdevels.com
 ionicframework.com
 iperceptions.com
 ipfind.co
@@ -534,6 +551,7 @@ isle-cloud.com
 isle-cloud.eu
 isle-consultants.com
 isle.plus
+iso20022.org
 issy.com
 it-courtier.org
 it-ebooks-search.info
@@ -544,10 +562,12 @@ itcourtier.org
 iterm2.com
 ithemes.com
 itmanagersinbox.com
+itnext.io
 itranslate.com
 itstillworks.com
 iubenda.com
 izito.fr
+jardiland-laravoire.fr
 jardiland.com
 jaspersoft.com
 jetemmerde.com
@@ -597,6 +617,7 @@ lagexoise.fr
 lagout.org
 laigu.net
 lairdubois.fr
+laposte.fr
 laracasts.com
 laughingbirdsoftware.com
 leaddyno.com
@@ -611,6 +632,8 @@ lemagfemmes.com
 lenouvelliste.ch
 lepetitmoutard.be
 lepetitmoutard.fr
+lequipe.fr
+letemps.ch
 letsencrypt.org
 lever.co
 libreoffice.org
@@ -780,6 +803,7 @@ ovh.co.uk
 ovh.com
 ovh.net
 ownyourbits.com
+ozy.com
 packagist.org
 packt-cdn.com
 packtpub.com
@@ -897,6 +921,7 @@ ru.lv
 ru.nl
 ruby-php.org
 rubygems.org
+rue-montgallet.com
 rug.by
 rugby365.fr
 rugbycoachweekly.net
@@ -1032,6 +1057,7 @@ techadvisor.fr
 techguylabs.com
 technipages.com
 technologyevaluation.com
+technologyreview.com
 techotopia.com
 techradar.com
 techtarget.com
@@ -1233,35 +1259,6 @@ zopim.com
 zotero.org
 zuora.com
 zurb.com
-fnac.be
-datamation.com
-easyvoyage.com
-etsy.com
-example.com
-flipboard.com
-flip.it
-ozy.com
-technologyreview.com
-francetvinfo.fr
-freedesktop.org
-fury.io
-gemfury.com
-graphicpear.com
-grenierdeslegendes.info
-hardware.fr
-rue-montgallet.com
-howtoforge.com
-howtospecialist.com
-iaqm.com
-homeadvisor.com
-infoworld.com
-internetdevels.com
-iso20022.org
-itnext.io
-jardiland-laravoire.fr
-laposte.fr
-lequipe.fr
-letemps.ch
 
 
 # vim: nospell spelllang=en

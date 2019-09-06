@@ -1,4 +1,4 @@
-#! @revision 2019-09-06 (Fri) 16:40:57
+#! @revision 2019-09-06 (Fri) 16:44:48
 #! @brief    Blacklisted domains
 
 101com.com
@@ -324,6 +324,7 @@ aim4media.com
 aimtell.com
 aimtell.io
 airpr.com
+airship.com
 aistat.net
 akamaihd.net
 akanoo.com
@@ -353,6 +354,7 @@ aniview.com
 anrdoezrs.net
 antvoice.com
 aolcdn.com
+apartmenttherapy.info
 apenterprise.io
 apester.com
 app-us1.com
@@ -702,6 +704,7 @@ crispads.com
 criteo.com
 criteo.net
 critizr.com
+crm4d.com
 crowdgravity.com
 crowdsignal.com
 crushsaga.net
@@ -737,6 +740,7 @@ dc-storm.com
 de17a.com
 dealdotcom.com
 debtbusterloans.com
+decibelinsight.net
 decknetwork.net
 deloo.de
 deloplen.com
@@ -792,6 +796,10 @@ dwin2.com
 dynadmic.com
 e-catalogues.pro
 eadexchange.com
+early-birds.fr
+early-birds.io
+earthweb.com
+easydmp.net
 easyhits4u.com
 ebayadvertising.com
 ebdr3.com
@@ -800,9 +808,12 @@ ebuzzing.com
 eclick.vn
 ecoupons.com
 edgeio.com
+edgeme.sh
+editmysite.com
 eep.io
 effectivemeasure.com
 effectivemeasure.net
+effitarget.com
 elastic.co
 elasticad.net
 elcbrevard.org
@@ -810,7 +821,11 @@ elev.io
 elitedollars.com
 elitetoplist.com
 eloqua.com
+email-match.com
+email-reflex.com
 emarketer.com
+embed.ly
+embedly.com
 emediate.dk
 emediate.eu
 emerse.com
@@ -823,6 +838,7 @@ enoratraffic.com
 enquisite.com
 ensighten.com
 entercasino.com
+eperflex.com
 eqads.com
 equotix.com
 eqy.link
@@ -838,6 +854,7 @@ eurekster.com
 euroclick.com
 euros4click.de
 eusta.de
+ev.mu
 everesttech.net
 evergage.com
 evgnet.com
@@ -872,11 +889,14 @@ ezula.com
 f1g.fr
 f5biz.com
 facebook.net
+facil-iti.com
 fastcdn.co
 fastclick.com
 fastclick.net
+fastcompany.net
 fastly-insights.com
 fastly.com
+fastly.net
 fastlylabs.com
 fastlylb.net
 fastspring.com
@@ -902,6 +922,7 @@ flashtalking.com
 flattr.com
 fleshlightcash.com
 flexbanner.com
+flixbe.com
 flowgo.com
 flurry.com
 fogl1onf.com
@@ -919,6 +940,7 @@ freegeoip.live
 freelogs.com
 freeonlineusers.com
 freepay.com
+freeskreen.com
 freestats.com
 freestats.tv
 freewebcounter.com
@@ -983,6 +1005,7 @@ grafstat.ro
 graivaik.com
 grammarly.com
 grammarly.io
+graphinium.com
 graphly.io
 greenhouse.io
 greystripe.com
@@ -990,6 +1013,7 @@ gridsumdissector.com
 gromairt.net
 grsm.io
 gs-chat.com
+gscontxt.net
 gtimg.cn
 gtimg.com
 gtop.ro
@@ -1011,6 +1035,7 @@ heatmap.it
 heatmap.services
 heias.com
 hellobar.com
+hellocoton.fr
 hentaicounter.com
 herbalaffiliateprogram.com
 here.com
@@ -1034,6 +1059,7 @@ hits4me.com
 hits4pay.com
 hitslink.com
 hittail.com
+hlserve.com
 holimetrix.com
 hollandbusinessadvertising.nl
 home.neustar
@@ -1070,6 +1096,7 @@ iasds01.com
 ibclick.stream
 iconadserver.com
 icptrack.com
+id5-sync.com
 idcounter.com
 identads.com
 idgesg.net
@@ -1090,7 +1117,9 @@ imarketservices.com
 imedia.cz
 imgaft.com
 imgur.com
+impact.com
 impactradius-event.com
+impactradius-go.com
 impdesk.com
 imprese.cz
 impressionmedia.cz
@@ -1130,6 +1159,7 @@ instapage.com
 intelliads.com
 intellimize.co
 intellitxt.com
+intentmedia.net
 intercomassets.com
 intercomcdn.com
 intergi.com
@@ -1169,6 +1199,7 @@ jimdo.com
 jimstatic.com
 jinkads.de
 joblist.app
+jobscore.com
 joetec.net
 jsdelivr.net
 juicyads.com
@@ -1214,6 +1245,7 @@ launchbit.com
 launchdarkly.com
 lbn.ru
 leadboltads.net
+leadboxer.com
 leadclick.com
 leadfeeder.com
 leadforensics.com
@@ -1315,6 +1347,7 @@ measuremap.com
 media.net
 media6degrees.com
 mediaarea.eu
+mediaathay.org.uk
 mediabong.com
 mediacharger.com
 mediadvertising.ro
@@ -1404,6 +1437,7 @@ n69.com
 naj.sk
 namimedia.com
 nastydollars.com
+native.ai
 naver.com
 naver.net
 navigator.io
@@ -1552,6 +1586,7 @@ pictela.net
 pillscash.com
 pimproll.com
 pingdom.net
+pippio.com
 pixalate.com
 pixelme.me
 pixelpop.co
@@ -1623,6 +1658,7 @@ pxu.co
 qctop.com
 qnsr.com
 qq.com
+qsstats.com
 qtlglb.com
 qualaroo.com
 qualityunit.com
@@ -1816,6 +1852,8 @@ skylink.vn
 skypeassets.com
 sleeknote.com
 slickaffiliate.com
+slimcut.com
+slimcutmedia.com
 slopeaota.com
 smart-data-systems.com
 smart4ads.com
@@ -1832,6 +1870,7 @@ snoobi.com
 socdm.com
 socialspark.com
 sociomantic.com
+sojern.com
 solocpm.com
 sonobi.com
 spacash.com
@@ -1841,6 +1880,7 @@ speedyrhino.co
 spezialreporte.de
 spiceworks.com
 splitoptimizer.com
+spokenlayer.com
 sponsorads.de
 sponsorpro.de
 spotx.tv
@@ -1852,6 +1892,9 @@ spylog.com
 spywarelabs.com
 spywarenuker.com
 spywords.com
+squadata.net
+squakon.eu
+squatiki.eu
 srwww1.com
 st-hatena.com
 stack-sonar.com
@@ -1868,12 +1911,14 @@ stat.su
 stat24.com
 statcounter.com
 statcounter.com.cdnga.net
+staticworld.net
 stats4all.com
 statsie.com
 statxpress.com
 steelhouse.com
 steelhousemedia.com
 stickyadstv.com
+storetail.net
 streamrail.com
 suavalds.com
 subscribers.com
@@ -2038,6 +2083,7 @@ unrulymedia.com
 untd.com
 updated.com
 upsellit.com
+urbanairship.com
 urlcash.net
 usabilla.com
 usapromotravel.com
@@ -2057,7 +2103,9 @@ valueclickmedia.com
 valuecommerce.com
 valuesponsor.com
 vamtam.com
+ve.com
 veille-referencement.com
+veinteractive.com
 ventivmedia.com
 veoxa.com
 vepxl1.net
@@ -2089,6 +2137,7 @@ visx.net
 vm.de
 vntsm.com
 voicefive.com
+volvelle.tech
 voogy.app
 voogy.com
 vpon.com
@@ -2132,6 +2181,7 @@ webtrackerplus.com
 webtraffic.se
 webtraxx.de
 webtrekk.net
+webtrends.com
 webtrendslive.com
 webvisor.org
 wedia-group.com
@@ -2195,6 +2245,7 @@ yieldlab.net
 yieldmanager.com
 yieldmanager.net
 yieldmo.com
+yieldoptimizer.com
 yieldtraffic.com
 yimg.jp
 yjtag.jp
@@ -2215,6 +2266,7 @@ zenaps.com
 zencdn.net
 zenkreka.com
 zenzuu.com
+zeotap.com
 zetaglobal.com
 zetaglobal.net
 zeusclicks.com
@@ -2225,64 +2277,6 @@ zopim.com
 zopim.io
 zugnogne.com
 zuora.com
-decibelinsight.net
-early-birds.fr
-early-birds.io
-hlserve.com
-storetail.net
-veinteractive.com
-ve.com
-volvelle.tech
-earthweb.com
-qsstats.com
-webtrends.com
-zeotap.com
-yieldoptimizer.com
-squakon.eu
-pippio.com
-leadboxer.com
-mediaathay.org.uk
-crm4d.com
-graphinium.com
-intentmedia.net
-sojern.com
-ev.mu
-jobscore.com
-email-match.com
-easydmp.net
-squadata.net
-squakon.eu
-squatiki.eu
-edgeme.sh
-editmysite.com
-effitarget.com
-email-reflex.com
-eperflex.com
-embedly.com
-squadata.net
-eperflex.com
-embedly.com
-embed.ly
-effitarget.com
-facil-iti.com
-fastly.net
-finnito.nz
-apartmenttherapy.info
-fastcompany.net
-native.ai
-spokenlayer.com
-flixbe.com
-urbanairship.com
-airship.com
-freeskreen.com
-slimcut.com
-slimcutmedia.com
-gscontxt.net
-hellocoton.fr
-id5-sync.com
-impactradius-go.com
-impact.com
-staticworld.net
 
 
 # vim: nospell spelllang=en
