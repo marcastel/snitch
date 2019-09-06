@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2019-09-06 (Fri) 15:37:00
+#! @revision 2019-09-06 (Fri) 16:44:17
 
 1stwebdesigner.com
 24heures.ch
@@ -563,6 +563,7 @@ jodah.net
 joebuhlig.com
 journaldesfemmes.fr
 journaldunet.com
+journaldunet.fr
 jquery.com
 jsdelivr.com
 jsdelivr.net
@@ -1232,5 +1233,35 @@ zopim.com
 zotero.org
 zuora.com
 zurb.com
+fnac.be
+datamation.com
+easyvoyage.com
+etsy.com
+example.com
+flipboard.com
+flip.it
+ozy.com
+technologyreview.com
+francetvinfo.fr
+freedesktop.org
+fury.io
+gemfury.com
+graphicpear.com
+grenierdeslegendes.info
+hardware.fr
+rue-montgallet.com
+howtoforge.com
+howtospecialist.com
+iaqm.com
+homeadvisor.com
+infoworld.com
+internetdevels.com
+iso20022.org
+itnext.io
+jardiland-laravoire.fr
+laposte.fr
+lequipe.fr
+letemps.ch
+
 
 # vim: nospell spelllang=en

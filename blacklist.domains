@@ -1,4 +1,4 @@
-#! @revision 2019-09-06 (Fri) 15:36:51
+#! @revision 2019-09-06 (Fri) 16:40:57
 #! @brief    Blacklisted domains
 
 101com.com
@@ -2225,5 +2225,64 @@ zopim.com
 zopim.io
 zugnogne.com
 zuora.com
+decibelinsight.net
+early-birds.fr
+early-birds.io
+hlserve.com
+storetail.net
+veinteractive.com
+ve.com
+volvelle.tech
+earthweb.com
+qsstats.com
+webtrends.com
+zeotap.com
+yieldoptimizer.com
+squakon.eu
+pippio.com
+leadboxer.com
+mediaathay.org.uk
+crm4d.com
+graphinium.com
+intentmedia.net
+sojern.com
+ev.mu
+jobscore.com
+email-match.com
+easydmp.net
+squadata.net
+squakon.eu
+squatiki.eu
+edgeme.sh
+editmysite.com
+effitarget.com
+email-reflex.com
+eperflex.com
+embedly.com
+squadata.net
+eperflex.com
+embedly.com
+embed.ly
+effitarget.com
+facil-iti.com
+fastly.net
+finnito.nz
+apartmenttherapy.info
+fastcompany.net
+native.ai
+spokenlayer.com
+flixbe.com
+urbanairship.com
+airship.com
+freeskreen.com
+slimcut.com
+slimcutmedia.com
+gscontxt.net
+hellocoton.fr
+id5-sync.com
+impactradius-go.com
+impact.com
+staticworld.net
 
-# vim: nospell
+
+# vim: nospell spelllang=en

@@ -7931,6 +7931,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "journaldunet.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "journaldunet.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "jquery.com"
     },
     {
@@ -17291,6 +17305,412 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "zurb.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fnac.be"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fnac.be"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "datamation.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "datamation.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "easyvoyage.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "easyvoyage.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "etsy.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "etsy.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "example.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "example.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "flipboard.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "flipboard.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "flip.it"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "flip.it"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ozy.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "ozy.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "technologyreview.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "technologyreview.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "francetvinfo.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "francetvinfo.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freedesktop.org"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "freedesktop.org"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fury.io"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "fury.io"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gemfury.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "gemfury.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "graphicpear.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "graphicpear.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "grenierdeslegendes.info"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "grenierdeslegendes.info"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hardware.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "hardware.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rue-montgallet.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "rue-montgallet.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "howtoforge.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "howtoforge.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "howtospecialist.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "howtospecialist.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "iaqm.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "iaqm.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "homeadvisor.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "homeadvisor.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "infoworld.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "infoworld.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "internetdevels.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "internetdevels.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "iso20022.org"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "iso20022.org"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "itnext.io"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "itnext.io"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jardiland-laravoire.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "jardiland-laravoire.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "laposte.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "laposte.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lequipe.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "lequipe.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "letemps.ch"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "letemps.ch"
     },
     {
       "action": "allow",
