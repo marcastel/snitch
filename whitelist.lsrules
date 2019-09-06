@@ -595,6 +595,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "allodocteurs.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "allodocteurs.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "allrecipes.co.uk"
     },
     {
@@ -721,6 +735,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "amcharts.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "amcharts.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "ameli.fr"
     },
     {
@@ -771,6 +799,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "angouleme.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "angularindepth.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "angularindepth.com"
     },
     {
       "action": "allow",
@@ -1121,6 +1163,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "backmarket.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "battle-group.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "battle-group.com"
     },
     {
       "action": "allow",
@@ -2107,6 +2163,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "cdpn.io"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cdpn.io"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "cdscdn.com"
     },
     {
@@ -2541,6 +2611,34 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "claranet.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "claranet.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "claranetsoho.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "claranetsoho.co.uk"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "cleirppa.fr"
     },
     {
@@ -2737,6 +2835,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "cnews.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cnews.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "cocoadevcentral.com"
     },
     {
@@ -2801,6 +2913,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "codefund.io"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "codepen.io"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "codepen.io"
     },
     {
       "action": "allow",
@@ -3403,6 +3529,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "custhelp.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cyberbricoleur.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "cyberbricoleur.com"
     },
     {
       "action": "allow",
@@ -4243,6 +4383,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "economacs.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "education.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "education.fr"
     },
     {
       "action": "allow",
@@ -6293,6 +6447,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "grands-meres.net"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "grands-meres.net"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "graphviz.org"
     },
     {
@@ -6979,6 +7147,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "indepth.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "indepth.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "infogram.com"
     },
     {
@@ -7427,6 +7609,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "itcourtier.org"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "itcourtier.org"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "iterm2.com"
     },
     {
@@ -7715,6 +7911,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "journaldesfemmes.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "journaldunet.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "journaldunet.com"
     },
     {
       "action": "allow",
@@ -12495,6 +12705,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "s-sfr.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "s-sfr.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "sabre.io"
     },
     {
@@ -12713,6 +12937,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "sfdcstatic.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sfr.fr"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "sfr.fr"
     },
     {
       "action": "allow",
@@ -13287,6 +13525,20 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "sparklabs.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "speckyboy.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "speckyboy.com"
     },
     {
       "action": "allow",
@@ -16975,6 +17227,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "zohopublic.com"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "zohopublic.com"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "zopim.com"
     },
     {
@@ -17025,20 +17291,6 @@
       "process": "any",
       "protocol": "tcp",
       "remote-domains": "zurb.com"
-    },
-    {
-      "action": "allow",
-      "ports": "80",
-      "process": "any",
-      "protocol": "tcp",
-      "remote-domains": "itcourtier.org"
-    },
-    {
-      "action": "allow",
-      "ports": "443",
-      "process": "any",
-      "protocol": "tcp",
-      "remote-domains": "itcourtier.org"
     },
     {
       "action": "allow",

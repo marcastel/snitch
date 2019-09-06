@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2019-09-04 (Wed) 14:42:43
+#! @revision 2019-09-06 (Fri) 15:37:00
 
 1stwebdesigner.com
 24heures.ch
@@ -39,6 +39,7 @@ algolia.net
 alligator.io
 allinone.im
 allmacworld.com
+allodocteurs.fr
 allrecipes.co.uk
 allrugby.com
 alsoft.com
@@ -48,10 +49,12 @@ amara.org
 amazon.com
 amazon.fr
 amazonaws.com
+amcharts.com
 ameli.fr
 ampproject.org
 anatomy3datlas.com
 angouleme.fr
+angularindepth.com
 anylist.com
 apidae-tourisme.com
 appboycdn.com
@@ -77,6 +80,7 @@ azureedge.net
 azurewebsites.net
 b-cdn.net
 backmarket.fr
+battle-group.com
 bbb.org
 bbc.co.uk
 bbc.com
@@ -147,6 +151,7 @@ cdninstagram.com
 cdnjquery.com
 cdnjs.com
 cdnlenouvelliste.ch
+cdpn.io
 cdscdn.com
 cedexis.com
 celnat.fr
@@ -178,6 +183,8 @@ cisdem.com
 citrix.com
 civiccomputing.com
 civicuk.com
+claranet.co.uk
+claranetsoho.co.uk
 cleirppa.fr
 clemson.edu
 cleveralgorithms.com
@@ -192,11 +199,13 @@ cloudfront.net
 cloudinary.com
 cms-twdigitalassets.com
 cnet.com
+cnews.fr
 cocoadevcentral.com
 cocoatech.com
 coconut-flavour.com
 codefund.app
 codefund.io
+codepen.io
 codesandbox.io
 codevoyagers.com
 codeweavers.com
@@ -240,6 +249,7 @@ csv-to-ics.com
 cultofmac.com
 curtclifton.net
 custhelp.com
+cyberbricoleur.com
 cyberciti.biz
 cyberghostvpn.com
 d3js.org
@@ -300,6 +310,7 @@ eclipse.org
 ecole-musique-actuelle-gex.fr
 ecoledemusiquegex.org
 economacs.com
+education.fr
 edysoft.com
 effectiveremotework.com
 egghead.io
@@ -446,6 +457,7 @@ googlevideo.com
 goqr.me
 gouv.fr
 gramps-project.org
+grands-meres.net
 graphviz.org
 gravatar.com
 greatsampleresume.com
@@ -495,6 +507,7 @@ immuniweb.com
 inakasoftware.com
 inc.com
 indeed.com
+indepth.com
 infogram.com
 informer.com
 informit.com
@@ -527,6 +540,7 @@ it-ebooks-search.info
 it-ebooks.com
 it-ebooks.info
 itbooks.net
+itcourtier.org
 iterm2.com
 ithemes.com
 itmanagersinbox.com
@@ -548,6 +562,7 @@ jixipix.com
 jodah.net
 joebuhlig.com
 journaldesfemmes.fr
+journaldunet.com
 jquery.com
 jsdelivr.com
 jsdelivr.net
@@ -889,6 +904,7 @@ rugbyworldcup.com
 runkit.com
 runkitcdn.com
 s-microsoft.com
+s-sfr.fr
 sabre.io
 salesforce.com
 salesforceliveagent.com
@@ -905,6 +921,7 @@ selency.fr
 sentry.io
 sf-syn.com
 sfdcstatic.com
+sfr.fr
 sftcdn.net
 shareasale.com
 shawnblanc.net
@@ -946,6 +963,7 @@ sourceforge.io
 sourceforge.net
 spagobi.org
 sparklabs.com
+speckyboy.com
 spectacleapp.com
 speedcurve.com
 splinternews.com
@@ -1209,10 +1227,10 @@ zim-wiki.org
 zippopotam.us
 zipzapmac.com
 zoho.com
+zohopublic.com
 zopim.com
 zotero.org
 zuora.com
 zurb.com
-itcourtier.org
 
 # vim: nospell spelllang=en

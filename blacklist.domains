@@ -1,4 +1,4 @@
-#! @revision 2019-09-04 (Wed) 14:37:37
+#! @revision 2019-09-06 (Fri) 15:36:51
 #! @brief    Blacklisted domains
 
 101com.com
@@ -31,6 +31,7 @@
 777partner.com
 77tracking.com
 7bpeople.com
+7eer.net
 7search.com
 99count.com
 a2z.com
@@ -44,7 +45,9 @@ abtasty.com
 abz.com
 accengage.com
 accengage.net
+accessibe.com
 acpm.fr
+acsbap.com
 acsseo.com
 acsta.net
 actionsplash.com
@@ -314,6 +317,7 @@ affiliatetracking.com
 affiliatetracking.net
 affiliatewindow.com
 affinilead.com
+affiz.net
 agkn.com
 ahalogy.com
 aim4media.com
@@ -327,6 +331,7 @@ albacross.com
 alclick.com
 alenty.com
 alexametrics.com
+algolia.com
 algolia.net
 algolianet.com
 alicdn.com
@@ -346,6 +351,7 @@ analytics.twitter.com
 analytics.yahoo.com
 aniview.com
 anrdoezrs.net
+antvoice.com
 aolcdn.com
 apenterprise.io
 apester.com
@@ -358,7 +364,9 @@ appdynamics.com
 appnexus.com
 appspot.com
 apture.com
+ar-cdn.com
 arcadebanners.com
+arianelab.com
 arrivalist.com
 arskwmlh.com
 aspnetcdn.com
@@ -379,6 +387,7 @@ audience2media.com
 autohits.dk
 autopilothq.com
 avenuea.com
+avis-verifies.com
 avocet.io
 avres.net
 avsads.com
@@ -417,6 +426,7 @@ basis.net
 batch.com
 baynote.net
 baypops.com
+bazaarvoice.com
 bbbpromos.org
 bbelements.com
 begun.ru
@@ -443,6 +453,7 @@ bigbangmedia.com
 bigbrain.me
 bigclicks.com
 bigpicture.io
+bigpipes.co
 billboard.cz
 bimbolive.com
 bitads.net
@@ -462,6 +473,8 @@ blogtoplist.se
 blogtopsites.com
 blueadvertise.com
 bluecava.com
+blueconic.com
+blueconic.net
 bluecore.com
 bluekai.com
 bluelithium.com
@@ -510,6 +523,7 @@ bvalphaserver.com
 c1exchange.com
 cachefly.net
 caliberredirect.com
+calotag.com
 calrep.ly
 calreply.com
 calreply.net
@@ -537,6 +551,7 @@ casinotraffic.com
 casinotreasure.com
 cbmall.com
 cbsistatic.com
+ccgateway.net
 ccm2.net
 ccmbenchmark.com
 ccmbg.com
@@ -625,6 +640,7 @@ clp.guru
 clrstm.com
 clustrmaps.com
 cmpstar.com
+cnetcontent.com
 cnomy.com
 codeblackbelt.com
 coll2onf.com
@@ -700,12 +716,16 @@ cybba.com
 cybba.solutions
 cyberbounty.com
 cybermonitor.com
+d-bi.fr
 d41.co
 dailyfresh-media.com
 dairouzy.net
+damdy.com
 danban.com
 dapper.net
+dartsearch.net
 datadoghq-browser-agent.com
+datadome.co
 datashreddergold.com
 datatrans.biz
 datenwerke.net
@@ -822,6 +842,7 @@ everesttech.net
 evergage.com
 evgnet.com
 evidencecleanergold.com
+ew3.io
 ewebcounter.com
 exchange.bg
 exchangead.com
@@ -850,6 +871,7 @@ ezoic.net
 ezula.com
 f1g.fr
 f5biz.com
+facebook.net
 fastcdn.co
 fastclick.com
 fastclick.net
@@ -882,6 +904,7 @@ fleshlightcash.com
 flexbanner.com
 flowgo.com
 flurry.com
+fogl1onf.com
 fomo.com
 fonts.net
 footprint.net
@@ -890,6 +913,7 @@ formstack.com
 forthebadge.com
 fpctraffic.com
 fpctraffic2.com
+free.org
 freebanner.com
 freegeoip.live
 freelogs.com
@@ -936,6 +960,7 @@ getdrip.com
 getintent.com
 getpushmonkey.com
 getsitecontrol.com
+getviously.com
 ggpht.com
 gigya.com
 glauvoob.com
@@ -1009,6 +1034,7 @@ hits4me.com
 hits4pay.com
 hitslink.com
 hittail.com
+holimetrix.com
 hollandbusinessadvertising.nl
 home.neustar
 homepageking.de
@@ -1119,6 +1145,7 @@ ip-api.com
 ip.ro
 ip193.cn
 ip2org.com
+ipapi.com
 ipdata.co
 iperceptions.com
 ipredictive.com
@@ -1143,8 +1170,10 @@ jimstatic.com
 jinkads.de
 joblist.app
 joetec.net
+jsdelivr.net
 juicyads.com
 jumptap.com
+justpremium.com
 justrelevant.com
 justuno.com
 justwebads.com
@@ -1170,6 +1199,7 @@ kissmetrics.com
 kk-data.com
 kliks.nl
 kochava.com
+kolplay.com
 komoona.com
 kompasads.com
 kontera.com
@@ -1196,6 +1226,7 @@ leadpages.net
 leadplace.fr
 leadsbridge.com
 leadsmonitor.io
+leady.com
 leadzupc.com
 lerelaisinternet.com
 levelrate.de
@@ -1244,6 +1275,7 @@ lockerdome.com
 logmatic.io
 logua.com
 lop.com
+lovevilleyulan.com
 lpsnmedia.net
 lucidmedia.com
 luckyorange.net
@@ -1382,6 +1414,7 @@ nedstat.com
 nedstat.nl
 nedstatbasic.net
 nedstatpro.net
+nekudo.com
 nend.net
 neoffic.com
 netaffiliation.com
@@ -1408,6 +1441,7 @@ ninjacat.io
 nitroclicks.com
 noriskdomain.com
 notifia.io
+notification.services
 novem.pl
 npttech.com
 nr-data.net
@@ -1437,6 +1471,7 @@ onestatfree.com
 onestore.ms
 onetag-sys.com
 onfastspring.com
+onfocus.io
 online-metrix.net
 onlinecash.com
 onlinecashmethod.com
@@ -1501,6 +1536,7 @@ performancerevenues.com
 performancing.com
 perfstack.net
 permutive.com
+personali.com
 petametrics.com
 petiteumbrella.com
 pgmediaserve.com
@@ -1618,6 +1654,7 @@ rate.ru
 rawgit.com
 rd.gt
 reachforce.com
+reachgroup.com
 reachjunction.com
 reactful.com
 reactx.com
@@ -1634,9 +1671,11 @@ realtracker.com
 recaptcha.net
 recurly.com
 redditstatic.com
+redintelligence.net
 redirectingat.com
 reduxmedia.com
 reduxmediagroup.com
+redvertisment.com
 referralware.com
 refersion.com
 reflow.tv
@@ -1645,6 +1684,7 @@ reinvigorate.net
 reklamcsere.hu
 relevanz10.de
 relmaxtop.com
+report-uri.io
 retargeter.com
 reussissonsensemble.fr
 revcontent.com
@@ -2022,6 +2062,7 @@ ventivmedia.com
 veoxa.com
 vepxl1.net
 vericlick.com
+verified-reviews.com
 vertadnet.com
 veruta.com
 vervewireless.com
@@ -2038,6 +2079,7 @@ view4cash.de
 viewpoint.com
 viglink.com
 viid.me
+viously.com
 visistat.com
 visitbox.de
 visitors.live
@@ -2092,12 +2134,14 @@ webtraxx.de
 webtrekk.net
 webtrendslive.com
 webvisor.org
+wedia-group.com
 weewhaik.com
 weibo.com
 wetrack.it
 whaleads.com
 whatrocks.co
 whenu.com
+whisk.com
 whispa.com
 whoisonline.net
 whoisvisiting.com
@@ -2167,6 +2211,7 @@ zbo.media
 zebestof.com
 zedo.com
 zemanta.com
+zenaps.com
 zencdn.net
 zenkreka.com
 zenzuu.com
@@ -2180,6 +2225,5 @@ zopim.com
 zopim.io
 zugnogne.com
 zuora.com
-
 
 # vim: nospell
