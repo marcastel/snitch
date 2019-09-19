@@ -1,4 +1,4 @@
-#! @revision 2019-09-06 (Fri) 16:44:48
+#! @revision 2019-09-19 (Thu) 11:44:20
 #! @brief    Blacklisted domains
 
 101com.com
@@ -306,7 +306,6 @@ adxvalue.com
 adyea.com
 adzerk.net
 adzones.com
-afcdn.com
 afeld.me
 affbuzzads.com
 affilae.com
@@ -2277,6 +2276,5 @@ zopim.com
 zopim.io
 zugnogne.com
 zuora.com
-
 
 # vim: nospell spelllang=en

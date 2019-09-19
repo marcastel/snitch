@@ -8,6 +8,14 @@ My [Little Snitch] rulesets for shared configurations across workstations.
 | Whitelist | https://bit.ly/2zK1NSk | Allow access to websites -- this is probably only usefull for me :smile:                  |
 | NoUpdate  | https://bit.ly/2ku1syP | Let's me decide when applications are allowed to call home (e.g. for updates)             |
 
+Notes:
+
+1.  Because of Google's DNS setup, it is not possible to block its analytical servers. So I do this in `/etc/hosts`:
+
+    ```
+    127.0.0.1 google-analytics.com
+    ```
+
 These lists need to be constantly updated... and this work has to be done manually -- or at least I have not found the algorithm
 to automatically do that work! This is my procedure to detect and flag sites to be blacklisted (and whitelisted).
 
