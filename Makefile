@@ -9,10 +9,10 @@ hosts:
 	vi -O blacklist.hosts whitelist.hosts
 
 blacklist:
-	./build.sh blacklist
+	./snitch build-rss blacklist
 
 whitelist:
-	./build.sh whitelist
+	./snitch build-rss whitelist
 
 commit:
 	git commit -m "$$(printf 'Updates %(%F [%a] %R)T.')" *

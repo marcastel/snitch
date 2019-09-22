@@ -1,12 +1,17 @@
 # Little Snitch rulesets
 
+Little Snitch is an essential security component on my laptops and workstations -- and probably a reason why I resist adopting
+smartphones and tables, which are for me, the most unsecure platforms one could possibly imagine in a world of pervasive tracking
+of all you online activities. While Little Snitch is a great piece of software and does its job nicely, it is a real pain to
+manage and maintain you rules. This repository is here to assist in the management and maintenance of such rules.
+
 My [Little Snitch] rulesets for shared configurations across workstations.
 
 | List      | Subscription URL       | Purpose                                                                                   |
 | --------- | ---------------------- | ----------------------------------------------------------------------------------------- |
 | Blacklist | https://bit.ly/2MQukhj | Deny HTTP(S) access to those numerous invasive services (ads, geolocation, analytics, …)  |
 | Whitelist | https://bit.ly/2zK1NSk | Allow access to websites -- this is probably only usefull for me :smile:                  |
-| NoUpdate  | https://bit.ly/2ku1syP | Let's me decide when applications are allowed to call home (e.g. for updates)             |
+| NoUpdate  | https://bit.ly/2ku1syP | Lets me decide when applications are allowed to call home (e.g. for updates)              |
 
 Notes:
 

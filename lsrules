@@ -1,5 +1,5 @@
 #! /bin/ksh
-#! @revision  2019-09-10 (Tue) 15:16:15
+#! @revision  2019-09-20 (Fri) 05:02:55
 #! @brief     Little snitch rule management utility
 
 # @{ INIT
@@ -19,6 +19,9 @@ typeset cli_mode='any'
 # @}
 # @{ FUNC
 
+function compress {
+
+}
 # @{ list2full
 
 function list2full {

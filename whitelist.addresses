@@ -1,9 +1,8 @@
 #! @brief    Whitelisted IP v4 and v6 addresses
-#! @revision 2019-09-04 (Wed) 14:37:39
+#! @revision 2019-09-20 (Fri) 06:27:44
+#  vim: nospell spelllang=en
 
 192.30.252.153
 192.30.252.154
 62.65.140.0/24
 8.8.8.8
-
-# vim: nospell spelllang=en

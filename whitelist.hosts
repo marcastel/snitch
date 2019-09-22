@@ -1,15 +1,14 @@
 #! @brief    Whitelisted host names
-#! @revision 2019-09-04 (Wed) 14:37:41
+#! @revision 2019-09-22 (Sun) 03:14:36
+#  vim: nospell spelllang=en
 
 api.apple-cloudkit.com
-api.mytf1.tf1.fr
 api.optnmstr.com
 assets.pinterest.com
 assets.wired.com
 assistance.sfr.fr
 c.microsoft.com
 c1.microsoft.com
-cdn-gae-ssl-default.akamaized.net
 cdn.augur.io
 cdn.fancybar.net
 cdn.jsdelivr.net
@@ -51,49 +50,23 @@ farm8.staticflickr.com
 fast.fonts.net
 fls-na.amazon.com
 getgrav-grav.netdna-ssl.com
-glb-eu.www.linkedin.com
-graph.facebook.com
 gum.criteo.com
-hello.myfonts.net
 hn-button.herokuapp.com
-id.orange.fr
-idaas.iam.ibm.com
 idsync-ext.rlcdn.com
 images.apple.com
 img.getyourguide.com
 img.shields.io
-ipinfo.io
 jwpltx.com
 keyvalueservice.icloud.com
 kr.ixiaa.com
 kweb.videostep.com
 li.infoworld.com
 maps.gstatic.com
-mobile.orange.fr
-newsletters.francetv.fr
 ns.sascdn.com
 ocsp.digicert.com
 p43-keyvalueservice.fe.apple-dns.net
-pbs.twimg.com
 pearsonnorthamerica.d2.sc.omtrdc.net
 pinterest.com
-platform.twitter.com
 safari-extensions.apple.com
-sangliere-tv.local
 ssl.apple.com
 staticxx.facebook.com
-syndication.twitter.com
-tv-a-la-demande.orange.fr
-wired.com
-www.apple.com
-www.dropbox.com
-www.facebook.com
-www.franceinfo.fr
-www.grymoire.com
-www.gstatic.com
-www.ibm.com
-www.informit.com
-www.journaldunet.com
-www.postbox-inc.com
-
-# vim: nospell spelllang=en

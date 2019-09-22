@@ -1,5 +1,6 @@
 #! @brief    Blacklisted host names
-#! @revision 2019-09-04 (Wed) 14:37:38
+#! @revision 2019-09-22 (Sun) 03:08:21
+#  vim: nospell spelllang=en
 
 24pm-affiliation.com
 a-ads.com
@@ -1215,5 +1216,3 @@ yab-adimages.s3.amazonaws.com
 zanox-affiliate.de
 zencudo.co.uk
 zeus.developershed.com
-
-# vim: nospell spelllang=en
