@@ -1,6 +1,7 @@
-# Little Snitch rulesets
+# Little Snitch subscriptions
 
-Harden you macOS platform with these [Little Snitch][little-snitch] subscriptions organised in [rulesets].
+Harden you macOS platform with these [Little Snitch][little-snitch] rule groups which can be subscribed to directly from within
+the application -- see the _Rule groups_ section below.
 
 ## Motivation
 
@@ -12,20 +13,15 @@ I hate being a guinea pig. I love Internet. I need a means of _recovering_ my In
 the time -- and by the way, so-called _private surfing_ is not really private because it makes the assumption websites are
 _friendly_, which evidently they are not.
 
-I hate smartphones, tablets and Microsoft Windows. I love UNIX and macOS for being the last lands of freedom. I don't want every
-other process on my computer calling home every couple of minutes and transfering information I have no control over. On UNIX I
-rely on the [AIT framework][ait-framework], which also operates on macOS. On macOS I further rely on [Little Snitch] to control
-all outgoing communications from any program or service.
+I hate smartphones, tablets and Microsoft Windows. I love UNIX and POSIX macOS for being the last lands of freedom. I don't want
+every other process on my computer calling home every couple of minutes and transfering information I have no control over. On
+UNIX I rely on the [AIT framework][ait-framework], which also operates on macOS. On macOS I also rely on [Little
+Snitch][little-snitch] to control all outgoing communications from any program or service.
 
-## Rulesets
+## Rule groups
 
-
-Little Snitch is an essential security component on my laptops and workstations -- and probably a reason why I resist adopting
-smartphones and tablets, which are for me, the most unsecure platforms one could possibly imagine in a world of pervasive
-tracking of all you online activities. While Little Snitch is a great piece of software and does its job nicely, it is a real pain
-to manage and maintain you rules. This repository is here to assist in the management and maintenance of such rules.
-
-My [Little Snitch] rulesets for shared configurations across workstations.
+While Little Snitch is a great piece of software and does its job nicely, it is a real pain to manage and maintain you rules. The
+purpose of this repository is to manage and maintain rule groups which can be easily subscribed to from within the application.
 
 | List      | Subscription URL       | Purpose                                                                                   |
 | --------- | ---------------------- | ----------------------------------------------------------------------------------------- |
@@ -36,7 +32,14 @@ My [Little Snitch] rulesets for shared configurations across workstations.
 | NoUpdate  | https://bit.ly/2WhyXD6 | Lets me decide when applications are allowed to call home (e.g. for updates)              |
 | Services  | https://bit.ly/2Pnm9K3 | MacOS services which should not be calling home all the time (emulate no Internet state). |
 
-Notes:
+## Updates
+
+So far this repository is only used within ISLE and I am its only maintainer. The `snitch` utility (in the `bin` directory) is
+used to manage inputs and regenerate outputs. Should this work interest others we would then setup a workflow to merge new rules
+from mutliple maintainers and contributors. In the meantime feel free to open an [issue][issues] to submit entries you would like
+to see added. Or to mention corrections or badly assigned URLs.
+
+## Hardening
 
 1.  Because of Google's DNS setup, it is not possible to block its analytical servers. So I do this in `/etc/hosts`:
 
