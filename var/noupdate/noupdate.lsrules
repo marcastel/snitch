@@ -1,0 +1,241 @@
+{
+  "name" : "ISLE NoUpdate",
+  "description" : "Disable selected applications from calling home all the time",
+  "rules" : [
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/OmniFocus.app\/Contents\/MacOS\/OmniFocus",
+      "remote-domains" : "omnigroup.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/OmniGraffle.app\/Contents\/MacOS\/OmniGraffle",
+      "remote-domains" : "omnigroup.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/OmniOutliner.app\/Contents\/MacOS\/OmniOutliner",
+      "remote-domains" : "omnigroup.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Adobe Animate CC 2019\/Adobe Animate 2019.app\/Contents\/MacOS\/Adobe Animate 2019",
+      "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Library\/Application Support\/Adobe\/Adobe Desktop Common\/ADS\/Adobe Desktop Service.app\/Contents\/MacOS\/Adobe Desktop Service",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Adobe Illustrator CC 2019\/Adobe Illustrator.app\/Contents\/MacOS\/Adobe Illustrator",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Adobe Photoshop CC 2019\/Adobe Photoshop CC 2019.app\/Contents\/MacOS\/Adobe Photoshop CC 2019",
+      "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Adobe Photoshop CC 2019\/Adobe Photoshop CC 2019.app\/Contents\/MacOS\/Adobe Photoshop CC 2019",
+      "remote-domains" : "typekit.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Araxis Merge.app\/Contents\/MacOS\/Araxis Merge",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Artlantis 2019\/Artlantis.app\/Contents\/MacOS\/Artlantis",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Banktivity 7.app\/Contents\/MacOS\/Banktivity 7",
+      "protocol" : "tcp",
+      "remote-domains" : "iggnetservices.com"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Banktivity 7.app\/Contents\/MacOS\/Banktivity 7",
+      "protocol" : "tcp",
+      "remote-domains" : "iggsoft.com"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Banktivity 7.app\/Contents\/MacOS\/Banktivity 7",
+      "protocol" : "tcp",
+      "remote-domains" : "iggsoftware.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Beyond Compare.app\/Contents\/MacOS\/BCompare",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/MacOS\/BusyCal",
+      "protocol" : "tcp",
+      "remote-domains" : "darksky.net"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/MacOS\/BusyCal",
+      "remote-domains" : "busymac.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/MacOS\/BusyCal",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/BusyCal.app\/Contents\/Library\/LoginItems\/N4RA379GBW.com.busymac.busycal3.alarm.app\/Contents\/MacOS\/N4RA379GBW.com.busymac.busycal3.alarm",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/BusyContacts.app\/Contents\/MacOS\/BusyContacts",
+      "remote-domains" : "busymac.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/BusyContacts.app\/Contents\/MacOS\/BusyContacts",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Carbon Copy Cloner.app\/Contents\/MacOS\/Carbon Copy Cloner",
+      "remote-domains" : "bombich.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Adobe Illustrator CC 2019\/Adobe Illustrator.app\/Contents\/MacOS\/CEPHtmlEngine\/CEPHtmlEngine.app\/Contents\/MacOS\/CEPHtmlEngine",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Adobe Photoshop CC 2019\/Adobe Photoshop CC 2019.app\/Contents\/MacOS\/CEPHtmlEngine.app\/Contents\/MacOS\/CEPHtmlEngine",
+      "remote-domains" : "adobe.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Cisdem PDF Converter OCR.app\/Contents\/MacOS\/Cisdem PDF Converter OCR",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "\/System\/Library\/PrivateFrameworks\/SafariSafeBrowsing.framework\/Versions\/A\/com.apple.Safari.SafeBrowsing.Service",
+      "remote-domains" : "googleapis.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Dash.app\/Contents\/MacOS\/Dash",
+      "remote-domains" : "hockeyapp.net"
+    },
+    {
+      "action" : "ask",
+      "process" : "\/Applications\/Dash.app\/Contents\/MacOS\/Dash",
+      "remote-domains" : "kapeli.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Direct Mail.app\/Contents\/MacOS\/Direct Mail",
+      "remote-domains" : "cloudfront.net"
+    },
+    {
+      "action" : "ask",
+      "process" : "\/Applications\/Direct Mail.app\/Contents\/MacOS\/Direct Mail",
+      "remote-domains" : "directmailmac.com"
+    },
+    {
+      "action" : "ask",
+      "process" : "\/Applications\/Direct Mail.app\/Contents\/MacOS\/Direct Mail",
+      "remote-domains" : "ethreemail.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/MacFamilyTree 9.app\/Contents\/MacOS\/MacFamilyTree 9",
+      "remote-domains" : "syniumsoftware.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "\/Applications\/Mail.app\/Contents\/MacOS\/Mail",
+      "remote-domains" : "mymailcheap.com"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Mail.app\/Contents\/MacOS\/Mail",
+      "protocol" : "tcp",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "ports" : "80",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "protocol" : "tcp",
+      "remote-domains" : "paprikaapp.com"
+    },
+    {
+      "action" : "deny",
+      "ports" : "443",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "protocol" : "tcp",
+      "remote-domains" : "paprikaapp.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "remote-domains" : "hockeyapp.net"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "remote-domains" : "inskinad.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Paprika Recipe Manager 3.app\/Contents\/MacOS\/Paprika Recipe Manager 3",
+      "remote-domains" : "paddleapi.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/SketchUp 2019\/SketchUp.app\/Contents\/MacOS\/SketchUp",
+      "remote-domains" : "google.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/SketchUp 2019\/SketchUp.app\/Contents\/MacOS\/SketchUp",
+      "remote-domains" : "sketchup.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Slack.app\/Contents\/MacOS\/Slack",
+      "remote-domains" : "bugsnag.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/TweetDeck.app\/Contents\/MacOS\/TweetDeck",
+      "remote-domains" : "crashlytics.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/TweetDeck.app\/Contents\/MacOS\/TweetDeck",
+      "remote-domains" : "google-analytics.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "\/Applications\/Typeface.app\/Contents\/MacOS\/Typeface",
+      "remote" : "any"
+    }
+  ]
+}
