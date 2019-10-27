@@ -1,5 +1,25 @@
 # Little Snitch rulesets
 
+Harden you macOS platform with these [Little Snitch][little-snitch] subscriptions organised in [rulesets].
+
+## Motivation
+
+The so-called _modern_ Internet (or Internet 2.0 as it was once called) is one in which you are no longer a mere mortal; you
+become a guinea pig in constant experimentation where the end goal is to know everything about you, what you are doing, what you
+are thinking, and possibly predicting your next thoughts and actions.
+
+I hate being a guinea pig. I love Internet. I need a means of _recovering_ my Internet freedom, without being _under cover_ all
+the time -- and by the way, so-called _private surfing_ is not really private because it makes the assumption websites are
+_friendly_, which evidently they are not.
+
+I hate smartphones, tablets and Microsoft Windows. I love UNIX and macOS for being the last lands of freedom. I don't want every
+other process on my computer calling home every couple of minutes and transfering information I have no control over. On UNIX I
+rely on the [AIT framework][ait-framework], which also operates on macOS. On macOS I further rely on [Little Snitch] to control
+all outgoing communications from any program or service.
+
+## Rulesets
+
+
 Little Snitch is an essential security component on my laptops and workstations -- and probably a reason why I resist adopting
 smartphones and tablets, which are for me, the most unsecure platforms one could possibly imagine in a world of pervasive
 tracking of all you online activities. While Little Snitch is a great piece of software and does its job nicely, it is a real pain
@@ -9,12 +29,12 @@ My [Little Snitch] rulesets for shared configurations across workstations.
 
 | List      | Subscription URL       | Purpose                                                                                   |
 | --------- | ---------------------- | ----------------------------------------------------------------------------------------- |
-| Blacklist | https://bit.ly/2MQukhj | Deny HTTP(S) access to those numerous invasive services (ads, geolocation, analytics, …)  |
-| Whitelist | https://bit.ly/2zK1NSk | Allow access to websites -- this is probably only usefull for me :smile:                  |
+| Blacklist | https://bit.ly/2BPsJ44 | Deny HTTP(S) access to those numerous invasive services (ads, geolocation, analytics, …)  |
+| Whitelist | https://bit.ly/2pYIW40 | Allow access to websites -- this is probably only usefull for me :smile:                  |
 |           |                        |                                                                                           |
-| AppStore  | https://bit.ly/36k61iy | MacOS services which you occasionally turn on to enable Apple Store and related           |
-| NoUpdate  | https://bit.ly/2ku1syP | Lets me decide when applications are allowed to call home (e.g. for updates)              |
-| Services  | https://bit.ly/2Whl4VD | MacOS services which should not be calling home all the time (emulate no Internet state). |
+| AppStore  | https://bit.ly/2pivdoS | MacOS services which you occasionally turn on to enable Apple Store and related           |
+| NoUpdate  | https://bit.ly/2WhyXD6 | Lets me decide when applications are allowed to call home (e.g. for updates)              |
+| Services  | https://bit.ly/2Pnm9K3 | MacOS services which should not be calling home all the time (emulate no Internet state). |
 
 Notes:
 
@@ -75,4 +95,5 @@ secured your Internet connexion then you are safe. Securing my Internet connexio
 -   only allowing SSH access from my MacBooks to other platforms (Linux, Windows), and
 -   denying automated connextion from smartphones which are the most unsafe platforms in the world.
 
-  [little snitch]: https://www.obdev.at/index.html
+  [little-snitch]: https://www.obdev.at
+  [ait-framework]: https://github.com/ISLEcode/AIT
