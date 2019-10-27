@@ -1,0 +1,4 @@
+{
+    "name": "ISLE Services",
+    "description": "MacOS services which should not be calling home all the time (emulate no Internet state)"
+}
