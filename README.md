@@ -23,14 +23,14 @@ Snitch][little-snitch] to control all outgoing communications from any program o
 While Little Snitch is a great piece of software and does its job nicely, it is a real pain to manage and maintain you rules. The
 purpose of this repository is to manage and maintain rule groups which can be easily subscribed to from within the application.
 
-| List      | Subscription URL       | Purpose                                                                                   |
-| --------- | ---------------------- | ----------------------------------------------------------------------------------------- |
-| Blacklist | https://bit.ly/2BPsJ44 | Deny HTTP(S) access to those numerous invasive services (ads, geolocation, analytics, …)  |
-| Whitelist | https://bit.ly/2pYIW40 | Allow access to websites -- this is probably only usefull for me :smile:                  |
-|           |                        |                                                                                           |
-| AppStore  | https://bit.ly/2pivdoS | MacOS services which you occasionally turn on to enable Apple Store and related           |
-| NoUpdate  | https://bit.ly/2WhyXD6 | Lets me decide when applications are allowed to call home (e.g. for updates)              |
-| Services  | https://bit.ly/2Pnm9K3 | MacOS services which should not be calling home all the time (emulate no Internet state). |
+| List        | Subscription URL       | Purpose                                                                                 |
+| ----------- | ---------------------- | --------------------------------------------------------------------------------------- |
+| [Blacklist] | https://bit.ly/2BPsJ44 | Deny access to those numerous invasive services (ads, geolocation, analytics, …)        |
+| [Whitelist] | https://bit.ly/2pYIW40 | Allow access to websites -- this is probably only usefull for me :smile:                |
+|             |                        |                                                                                         |
+| [AppStore]  | https://bit.ly/2pivdoS | MacOS services which you occasionally turn on to enable Apple Store and related         |
+| [NoUpdate]  | https://bit.ly/2WhyXD6 | Lets me decide when applications are allowed to call home (e.g. for updates)            |
+| [Services]  | https://bit.ly/2Pnm9K3 | Services which should not be calling home all the time (emulate no Internet state).     |
 
 ## Updates
 
@@ -100,3 +100,6 @@ secured your Internet connexion then you are safe. Securing my Internet connexio
 
   [little-snitch]: https://www.obdev.at
   [ait-framework]: https://github.com/ISLEcode/AIT
+  [blacklist]:      https://github.com/marcastel/snitch/wiki/Rules-Blacklist
+  [whitelist]:      https://github.com/marcastel/snitch/wiki/Rules-Whitelist
+  
