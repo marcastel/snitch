@@ -1,7 +1,7 @@
 # Little Snitch subscriptions
 
-Harden you macOS platform with these [Little Snitch][little-snitch] rule groups which can be subscribed to directly from within
-the application -- see the _Rule groups_ section below.
+Harden you macOS platform with these [Little Snitch][snitch] rule groups which can be subscribed to directly from within the
+application -- see the _Rule groups_ section below.
 
 ## Motivation
 
@@ -15,8 +15,8 @@ _friendly_, which evidently they are not.
 
 I hate smartphones, tablets and Microsoft Windows. I love UNIX and POSIX macOS for being the last lands of freedom. I don't want
 every other process on my computer calling home every couple of minutes and transfering information I have no control over. On
-UNIX I rely on the [AIT framework][ait-framework], which also operates on macOS. On macOS I also rely on [Little
-Snitch][little-snitch] to control all outgoing communications from any program or service.
+UNIX I rely on the [AIT framework][ait], which also operates on macOS. On macOS I also rely on [Little Snitch][snitch] to control
+all outgoing communications from any program or service.
 
 ## Rule groups
 
@@ -98,8 +98,13 @@ secured your Internet connexion then you are safe. Securing my Internet connexio
 -   only allowing SSH access from my MacBooks to other platforms (Linux, Windows), and
 -   denying automated connextion from smartphones which are the most unsafe platforms in the world.
 
-  [little-snitch]: https://www.obdev.at
-  [ait-framework]: https://github.com/ISLEcode/AIT
+  [ait]:            https://github.com/ISLEcode/AIT
+  [snitch]:         https://www.obdev.at
+
+  [appstore]:       https://github.com/marcastel/snitch/wiki/Rules-AppStore
   [blacklist]:      https://github.com/marcastel/snitch/wiki/Rules-Blacklist
+  [noupdate]:       https://github.com/marcastel/snitch/wiki/Rules-NoUpdate
+  [services]:       https://github.com/marcastel/snitch/wiki/Rules-Services
   [whitelist]:      https://github.com/marcastel/snitch/wiki/Rules-Whitelist
-  
+
+<!-- vim: set spelllang=en :-->
