@@ -1,7 +1,7 @@
 # Subscriptions for Little Snitch
 
 Harden you macOS platform with these [Little Snitch][snitch] rule groups which can be subscribed to directly from within the
-application -- see the _Rule groups_ section below.
+application.
 
 | List        | Subscription URL       | Purpose                                                                                 |
 | ----------- | ---------------------- | --------------------------------------------------------------------------------------- |
