@@ -1,9 +1,15 @@
-# Little Snitch subscriptions
+---
+revision: 2019-10-27 (Sun) 23:54:58
+---
+
+<!-- # Contents -->
+
+## Subscriptions for Little Snitch
 
 Harden you macOS platform with these [Little Snitch][snitch] rule groups which can be subscribed to directly from within the
 application -- see the _Rule groups_ section below.
 
-## Motivation
+### Motivation
 
 The so-called _modern_ Internet (or Internet 2.0 as it was once called) is one in which you are no longer a mere mortal; you
 become a guinea pig in constant experimentation where the end goal is to know everything about you, what you are doing, what you
@@ -18,7 +24,7 @@ every other process on my computer calling home every couple of minutes and tran
 UNIX I rely on the [AIT framework][ait], which also operates on macOS. On macOS I also rely on [Little Snitch][snitch] to control
 all outgoing communications from any program or service.
 
-## Rule groups
+### Rule groups
 
 While Little Snitch is a great piece of software and does its job nicely, it is a real pain to manage and maintain you rules. The
 purpose of this repository is to manage and maintain rule groups which can be easily subscribed to from within the application.
@@ -32,71 +38,7 @@ purpose of this repository is to manage and maintain rule groups which can be ea
 | [NoUpdate]  | https://bit.ly/2WhyXD6 | Lets me decide when applications are allowed to call home (e.g. for updates)            |
 | [Services]  | https://bit.ly/2Pnm9K3 | Services which should not be calling home all the time (emulate no Internet state).     |
 
-## Updates
-
-So far this repository is only used within ISLE and I am its only maintainer. The `snitch` utility (in the `bin` directory) is
-used to manage inputs and regenerate outputs. Should this work interest others we would then setup a workflow to merge new rules
-from mutliple maintainers and contributors. In the meantime feel free to open an [issue][issues] to submit entries you would like
-to see added. Or to mention corrections or badly assigned URLs.
-
-## Hardening
-
-1.  Because of Google's DNS setup, it is not possible to block its analytical servers. So I do this in `/etc/hosts`:
-
-    ```
-    127.0.0.1 google-analytics.com
-    ```
-
-These lists need to be constantly updated... and this work has to be done manually -- or at least I have not found the algorithm
-to automatically do that work! This is my procedure to detect and flag sites to be blacklisted (and whitelisted).
-
-1.  Make sure Little Snitch is configured in _alert mode_ so as to detect all new URLs
-
-1.  Open the website you want to visit (e.g. from a Google Search<sup>[1](#google)</sup>) -- open only on URL at a time.
-
-1.  Allow access for _15 minutes_ to all URLs alerted by Little Snitch, except for the original URL which is considered sane and
-    flagged as such, that is allow access _forever_ to the URL -- that is _host_ and _port_.
-
-1.  By giving the _to be_ blacklisted sites temporary access, this allows us to capture redirects and other URLs that may be
-    called -- this piggy back can go pretty deep sometimes.
-
-1.  Once the page loaded, the white listed sites will be listed in the _unapproved rules_ section and all the candidate sites to
-    be blacklisted will appear in the _temporary fules_ section -- or in the _expired rules_ section if the 15mn period of grace
-    has expired.
-
-1.  This is the tedious step: each site needs to be individually checked. I have a small shell script which allows me to manually
-    check each URL and add it either to proper list.
-
-1.  Once the above steps carried out, we end up with lists of domains, hosts and IP addresses that can then be dispatched in the
-    appropriate files of this Git repository.
-
-The _NoUpdate_ list is a specific. It's purpose is to prevent all applications -- including the operating
-system<sup>[2](#macos)</sup>, to call home. I don't want to be geolocated, I don't want to be included in analytics of any kind,
-and I don't want a forced update notification at any time of day or night. Applications are here to do their intended purpose, not
-for us to become guinea pigs. Likewise I want to control when I do updates -- I plan a maintenance day twice a
-year<sup>[3](#updates)</sup>.
-
-Here again, managing updates is a manual, and sometimes tedious task, where you need to selectively disable rules in the
-_NoUpdate_ ruleset to update the selected software; and once the udpate done, re-enable thos rules.
-
-<hr>
-
-<a name='google'><sup>1</sup></a>
-I use a custom shell script to perform Google searches, so as to strip off all the click and URL tracing.
-
-<a name='macos'><sup>2</sup></a>
-Rulesets were introduced in Little Snitch versino 4. Before that I managed the aforementioned lists using more complex shell
-scripts that allowed to cut & paste rules to/from Little Snitch -- including operating system rules. Since the introduction of
-these very usefull rulesets, Little Snitch has also introduced two default rulesets (i.e. _iCloud services_, and _macOS services);
-I keep those rulesets disabled in most cases.
-
-<a name='updates'><sup>3</sup></a>
-Most security _experts_ say you should regularly update your software for security patches. This is a bad practice. If you have
-secured your Internet connexion then you are safe. Securing my Internet connexion consists in
-
--   installing Little Snitch on my MacBooks,
--   only allowing SSH access from my MacBooks to other platforms (Linux, Windows), and
--   denying automated connextion from smartphones which are the most unsafe platforms in the world.
+<!-- # Bookmarks -->
 
   [ait]:            https://github.com/ISLEcode/AIT
   [snitch]:         https://www.obdev.at
