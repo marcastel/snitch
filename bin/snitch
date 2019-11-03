@@ -1,6 +1,6 @@
 #! /bin/ksh
 #! @brief     Little snitch rule management utility
-#! @revision  2019-10-27 (Sun) 11:54:59
+#! @revision  2019-11-03 (Sun) 04:03:09
 # @{ INIT
 
 # Essential constructs and globals
@@ -95,35 +95,6 @@ function snitch_addurls { # [ --clipboard ] [ FILE ... ]
 
     print -- "\nSummary:\n- Processed $processed/$count URLs"
     print -- "- \E[31m$blacklisted blacklisted\E[0m and \E[32m$whitelisted whitelisted\E[0m URLs"
-
-}
-
-# Append URLs to RSS feed source files
-function snitch_cmd_addurls { # [ FILE ... ]
-
-    # TODO for testing purposes only
-    print snitch_addurls $@
-    snitch_addurls $@
-    #snitch_addurls --clipboard
-
-}
-
-# Build the Little Snitch RSS feed file(s)
-function snitch_cmd_buildrss { # [ 'all' | 'black' | 'white' ]
-
-    typeset scope=$1; boolean scoped=false
-    typeset rc.jq='jq .'; whence -q jq || rc.jq=cat
-
-    [[ -n $scope && $scope == @(all|black?(list)) ]] && { scoped=true; snitch_rssfeed black; }
-    [[ -n $scope && $scope == @(all|white?(list)) ]] && { scoped=true; snitch_rssfeed white; }
-    (( scoped == true )) && return
-
-    typeset cmd="${rc.progname} build-rss"
-    [[ -z $scope ]] &&
-    print -u2 "\E[2m$cmd: \E[0;31mno scope specified\E[0m" ||
-    print -u2 "\E[2m$cmd: \E[0;1m$scope\E[0;2m: \E[0;31munrecognised RSS scope\E[0m"
-    print -u2 "Run \E[1m$cmd --man\E[0m for this command's UNIX man(1) page."
-    exit 2
 
 }
 
@@ -283,6 +254,38 @@ function snitch_rssheader { # LABEL
 
     typeset name="$1" brief="$2"
     printf '{\n"name": "%s",\n"description": "%s",\n' "$name" "$brief"
+
+}
+
+# @}
+# @{ CMDS
+
+# Append URLs to RSS feed source files
+function snitch_cmd_addurls { # [ FILE ... ]
+
+    # TODO for testing purposes only
+    print snitch_addurls $@
+    snitch_addurls $@
+    #snitch_addurls --clipboard
+
+}
+
+# Build the Little Snitch RSS feed file(s)
+function snitch_cmd_buildrss { # [ 'all' | 'black' | 'white' ]
+
+    typeset scope=$1; boolean scoped=false
+    typeset rc.jq='jq .'; whence -q jq || rc.jq=cat
+
+    [[ -n $scope && $scope == @(all|black?(list)) ]] && { scoped=true; snitch_rssfeed black; }
+    [[ -n $scope && $scope == @(all|white?(list)) ]] && { scoped=true; snitch_rssfeed white; }
+    (( scoped == true )) && return
+
+    typeset cmd="${rc.progname} build-rss"
+    [[ -z $scope ]] &&
+    print -u2 "\E[2m$cmd: \E[0;31mno scope specified\E[0m" ||
+    print -u2 "\E[2m$cmd: \E[0;1m$scope\E[0;2m: \E[0;31munrecognised RSS scope\E[0m"
+    print -u2 "Run \E[1m$cmd --man\E[0m for this command's UNIX man(1) page."
+    exit 2
 
 }
 
