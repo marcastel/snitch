@@ -1,0 +1,23 @@
+#! ksh
+
+function snitch_hlp_snitch {
+nameref usage=${1:1}
+usage+="[+NAME?${rc.progname}"$' -- command line utility for the maintenance of Little Snitch rules.]
+[+DESCRIPTION?Little Snitch is an essential security component on my laptops and workstations -- and probably a reason why I
+resist adopting smartphones and tables, which are for me, the most unsecure platforms one could possibly imagine in a world of
+pervasive tracking of all you online activities. While Little Snitch is a great piece of software and does its job nicely, it is a
+real pain to manage and maintain you rules. This utility is here to assist in the management and maintenance of such rules.]
+[+?The following commands are made available:]{
+[+add-urls?Allows to interactively add URLs to the maintained lists. This is intended to simultaneously display the URL in a
+browser window and provide a command line prompt on what action should be undertaken with the displayed URL.]
+[build-rss?Concatenantes rules and constructs the Little Snitch RSS ruleset. This command is typically called periodically from a
+scheduler to make all updates available.]
+}
+[+?I would have liked to say that this utility automates the handling or rules, unfortunately this is not fully the case because
+\bObjective Development\b, the makers of Little Snitch, don\'t provide the conventional hooks for such automation. For security
+reasons? Perhaps. Or perhaps not. In all cases, it is difficult to wrap scripts around Little Snitch. They have introduced their
+RSS-like feature -- which is great, but at the same time they have encrypted their rules files, whose contents we could previously
+list. Hopefully over time we will be able to extend this script and further its automated handling of rules.]'
+}
+
+# __END__
