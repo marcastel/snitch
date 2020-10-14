@@ -1,0 +1,46 @@
+#! ksh
+
+# Construct Little Snitch RSS rule for blacklisted destination
+function snitch_rssdisabled { # <no-param>
+
+    typeset fmt='{ "action" : "allow", "ports" : [ "80", "443" ], "process" : "any", "protocol" : "tcp", "remote-%s" : "%s" }'
+    typeset all=( addresses domains hosts )
+
+    # Process all possible definition files
+    for file in ${all[@]}; do
+
+        # Make sure the definition file exists
+        typeset path=${rc.vardir}/blacklist/blacklist.$file; [[ -f $path ]] || continue
+
+        # Count number of definition lines in file
+        count=$(grep -v '^#' $path | grep -v '^$' | wc -l)
+
+        # Make sure we have something to process
+        (( count > 0 )) || return
+
+        printf '"denied-remote-%s": [' $file
+
+        # Read the definition file, line by line
+        typeset line; cat $path | while read line; do
+
+            # Ignore empty lines and comments
+            [[ -z $line || ${line:0:1} == '#' ]] && continue
+
+            # Determine if we should append a JSON comma
+            typeset comma=','; (( -- count > 0 )) || comma=
+
+            # Output the JSON line
+            printf '"%s"%s\n' "$line" "$comma"
+
+        done
+
+        printf '],\n'
+
+    done
+
+    # Print dummy field so we don't have to clear the last comma above
+    printf '"owner": "me"\n'
+
+}
+
+# __END__
