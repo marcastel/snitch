@@ -1,5 +1,5 @@
 #! @brief    Blacklisted host names
-#! @revision 2019-09-22 (Sun) 03:08:21
+#! @revision 2020-10-14 (Wed) 20:07:18
 #  vim: nospell spelllang=en
 
 24pm-affiliation.com
@@ -17,6 +17,7 @@ a.ucoz.net
 a.ucoz.ru
 a.xanga.com
 a32.g.a.yimg.com
+aaxads.com
 abc-ads.com
 ac.rnm.ca
 accounts.pkr.com.invalid
@@ -841,6 +842,7 @@ dist.belnk.com
 dmtracking.alibaba.com
 dmtracking2.alibaba.com
 dnads.directnic.com
+doubleclick.net
 dwh-tracking.it.auth0.com
 dynamic.fmpub.net
 e-adimages.scrippsnetworks.com
@@ -884,6 +886,7 @@ geolocation.onetrust.com
 globaltrack.com.invalid
 globus-inter.com
 go-clicks.de
+go-mpulse.net
 go-rank.de
 gp.dejanews.com
 grapeshot.co.uk
@@ -1041,6 +1044,8 @@ pub.realmedia.fr
 publicidad.elmundo.es
 pubs.lemonde.fr
 q.azcentral.com
+quantcount.com
+quantserve.com
 rad.msn.com
 radar.cedexis.com
 rank-master.com
@@ -1063,6 +1068,7 @@ reklame.unwired-i.net
 reklamer.com.ua
 remotead.cnet.com
 republika.onet.pl
+ricdn.com
 richmedia.yimg.com
 rmads.msn.com
 rmedia.boston.com
@@ -1073,6 +1079,7 @@ s.206ads.com
 s.adroll.com
 sbx.pagesjaunes.fr
 scambiobanner.aruba.it
+scorecardresearch.com
 scripte-monster.de
 secure.webconnect.net
 securemetrics.apple.com
