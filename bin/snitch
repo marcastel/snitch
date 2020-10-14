@@ -1,16 +1,33 @@
 #! /bin/ksh
 #! @brief     Little snitch rule management utility
-#! @revision  2019-11-03 (Sun) 04:03:09
+#! @revision  2019-11-09 (Sat) 14:15:03
 # @{ INIT
 
 # Essential constructs and globals
 enum boolean=( false true )
+enum urlkind=( HOST DOMAIN IPv4 IPv6 )
+enum ruleset=( blacklist whitelist appstore services noupdate )
+
 typeset -C rc=(
     typeset progname=${0##*/}
+    typeset progpath=${0%/*}
     typeset command=none
-    boolean use_clipboard=true      # Process clipboard's content (add-urls)
+    boolean use_clipboard=false     # Process clipboard's content (add-urls)
     boolean flat_file=false         # Assume each input line is an domain/hostname/IP address (add-urls)
+    typeset -C ansi=(
+        label=$'\E[0;2m'
+        plain=$'\E[0m'
+        prompt=$'\E[35m'
+        ceos='$\r\E[M'              # Clear to end of screen
+    )
 )
+
+# Adjust path (and strip symbolic links)
+[[ ${rc.progname} == ${rc.progpath} || -z ${rc.progpath} ]] && rc.progpath=.
+rc.progpath=$(cd -P ${rc.progpath} && print $PWD);
+
+# Determine location of rules
+typeset rc.vardir=${rc.progpath%/*}/var
 
 # Collect command line command and remove it from argument list
 typeset rc.command=none; [[ -n $1 && ${1:0:1} != - ]] && { rc.command=${1//[_-]/}; shift; }
@@ -18,11 +35,241 @@ typeset rc.command=none; [[ -n $1 && ${1:0:1} != - ]] && { rc.command=${1//[_-]/
 # @}
 # @{ FUNC
 
+# action: suggest deny
+# priorigy: regular
+# direction: ingoing outgoing
+# owner: any me
+# destination: any ...
+# Populate clipboard with sample rules
+function snitch_pbcopy_samples {
+cat <<! | pbcopy
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/adprivacyd
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, adprivacyd tried to establish a connection to bag.itunes.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/PrivateFrameworks/AppStoreDaemon.framework/Support/appstoreagent
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 5 Nov 2019, appstoreagent tried to establish a connection to bag.itunes.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/PrivateFrameworks/ApplePushService.framework/apsd
+owner: system
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, apsd tried to establish a connection to init-p01st.push.apple.com on TCP port 80 (http). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/avconferenced
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, avconferenced via IMRemoteURLConnectionAgent.xpc tried to establish a connection to init.ess.apple.com on TCP port 80 (http). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/captiveagent
+owner: system
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, captiveagent tried to establish a connection to captive.apple.com on TCP port 80 (http). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 6 Nov 2019, com.apple.geod.xpc tried to establish a connection to gspe12-ssl.ls.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/commerce
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, commerce tried to establish a connection to init.itunes.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/nsurlsessiond
+owner: system
+destination: 17.253.109.202
+port: any
+protocol: any
+notes: On 9 Nov 2019, nsurlsessiond tried to establish a connection to 17.253.109.202 on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/nsurlsessiond
+owner: system
+destination: 17.253.109.203
+port: any
+protocol: any
+notes: On 9 Nov 2019, nsurlsessiond tried to establish a connection to 17.253.109.203 on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/nsurlsessiond
+owner: system
+destination: 17.253.109.204
+port: any
+protocol: any
+notes: On 9 Nov 2019, nsurlsessiond tried to establish a connection to 17.253.109.204 on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/nsurlsessiond
+owner: system
+destination: 17.253.113.201
+port: any
+protocol: any
+notes: On 9 Nov 2019, nsurlsessiond tried to establish a connection to 17.253.113.201 on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/nsurlsessiond
+owner: system
+destination: 17.253.113.204
+port: any
+protocol: any
+notes: On 9 Nov 2019, nsurlsessiond tried to establish a connection to 17.253.113.204 on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/nsurlsessiond
+owner: system
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 8 Nov 2019, nsurlsessiond tried to establish a connection to valid.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/PrivateFrameworks/CoreParsec.framework/parsec-fbf
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, parsec-fbf tried to establish a connection to api-glb-par.smoot.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/PrivateFrameworks/CoreParsec.framework/parsecd
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, parsecd tried to establish a connection to api.smoot.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: allow
+direction: outgoing
+priority: regular
+process: /Applications/Safari.app/Contents/MacOS/Safari
+owner: me
+destination: domain dkloc.ch
+port: any
+protocol: any
+notes: On 9 Nov 2019, Safari via com.apple.WebKit.Networking.xpc tried to establish a connection to www.dkloc.ch on TCP port 443 (https). The request was allowed via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/PrivateFrameworks/MessagesKit.framework/Versions/A/Resources/soagent.app/Contents/MacOS/soagent
+owner: me
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, soagent via IMRemoteURLConnectionAgent.xpc tried to establish a connection to init-p01md.apple.com on TCP port 80 (http). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated
+owner: system
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, softwareupdated tried to establish a connection to swscan.apple.com on TCP port 443 (https). The request was denied via connection alert.
+
+action: deny
+direction: outgoing
+priority: regular
+process: /usr/libexec/timed
+owner: system
+destination: domain apple.com
+port: any
+protocol: any
+notes: On 9 Nov 2019, timed tried to establish a connection to time.euro.apple.com on UDP port 123 (ntp). The request was denied via connection alert.
+!
+}
+
+# Prompt user for <ENTER> key
+function snitch_pause {
+
+    typeset text="$1"; [[ -n $1 ]] && text+='; hit <ENTER> to continue ...' || text='Hit <ENTER> to continue ...'
+
+    printf "${rc.ansi.prompt}$text${rc.ansi.plain}"
+    read -n 1 -N 1 null; printf ${rc.ansi.ceos}
+
+}
+
+# Prompt user to enable/disable Little Snitch
+function snitch_toggle_application {
+
+    [[ -n $1 ]] && typeset -l mode=$1 || return
+
+    typeset text; [[ $mode == @(on|true|1) ]] &&
+    text='If you previously disabled Little Snitch, you can now enable it again' ||
+    text='You are advised to disable Little Snitch'
+
+    snitch_pause "$text"
+
+}
+
 # Interactively check URLs and update white/black lists
 function snitch_addurls { # [ --clipboard ] [ FILE ... ]
 
-    # See if we should be using the clipboard otherwise collect the source file (or stream) to be processed
-    boolean clipboard=false; [[ -n $1 && $1 == --clipboard ]] && { clipboard=true; shift; } || typeset source=${1:--}
+    #! This function is a handy utility to interactively update lists from Little Snitch rules. The usual worklflow is to, by
+    #! default, allow or deny rules for 2 hours -- the good and the bad alike. As time passes, the rules expire and get collected
+    #! in the '_expired rules_' section. Once il a while select all those rules and launch this utility as `snitch add-urls`. At
+    #! you will be doing this often, say daily, but soon this will become less and less common. You can persist expired rules to a
+    #! file and handle them later.
+    #!
+    #! Upon invocation this function will scan all rules in the clipboard or in a specified file. For each rule, it will open the
+    #! related URL in the browser and prompt the caller for the handling of the rule. The URL is open in the background so that
+    #! the focus stays in the terminal window, hence avoiding switching applications all the time.
 
     # Collect the results set array to be analysed and determine the count of records in set
     typeset -a records; snitch_pbimport @records ${source:---clipboard}; integer count=${#records[@]}
@@ -31,43 +278,108 @@ function snitch_addurls { # [ --clipboard ] [ FILE ... ]
     (( count == 0 )) && return
 
     # Initialise counters
-    integer blacklisted=0 whitelisted=0 processed=0
+    typeset counters
 
-    # Clear screen and prompt user to disable Little Snitch
-    clear; print '\E[34;1;4mAdd URLs to black/white lists\E[0m\n'
-    print -f '\E[35myou are advised to disable Little Snitch; hit <ENTER> to continue ... \E[0m'
-    read -n 1 -N 1 null; printf '\r\E[M'
+    snitch_toggle_application off
 
-    # Initialise the prompt
-    typeset prompt='\E[1;4mb\E[0mlacklist, \E[1;4mw\E[0mhitelist, \E[1;4mi\E[0mgnore, or \E[1;4ma\E[0mbort'
-            prompt+=' \E[0;2m(use uppercase to flag host instead of domain)\E[0m ?'
+    # Initialise the prompts
+    typeset ps0= ps1= ps2=
+    ps0='\E[34;1;4mAdd Little Snitch rules\E[0m\n'
+    ps1+='\n\E[2m-----------------------------------------------------------------------------------------\E[0m\n'
+    ps1+='\E[2mlist:      \E[1;4mB\E[0;2mlacklist, \E[1;4mW\E[0;2mhitelist, \E[1;4mA\E[0;2mppStore, \E[1;4mN\E[0;2moUpdate,'
+    ps1+=' or \E[1;4mS\E[0;2mervices.\E[0;2m\n'
+    ps1+='           use uppercase to add application-specific rule or lowercase for a global rule.\E[0m\n'
+    ps1+='\E[2moptions:   IP v\E[1;4m4\E[0;2m or v\E[1;4m6\E[0;2m, \E[1;4mi\E[0;2mgnore this rule, or \E[1;4ma\E[0;2mbort.\E[0m\n'
+    ps1+='\E[2m? \E[0m'
+    ps2+='\E[2mappend:    \E[1;4mD\E[0;2momain, \E[1;4mH\E[0;2most, \E[1;4mI\E[0;2mP address (case insensitive)'
+    ps2+=' or \E[1;4ma\E[0;2mbort.\E[0m\n'
+    ps3='\E[0;2m'
+    ps4='\E[0m'
 
     # Interactively check each URL in list
     integer i; for (( i = 0; i < count; ++ i )); do
 
-        typeset url=${records[$i].destination}
-        boolean domain=false; [[ ${url:0:7} == 'domain ' ]] && domain=true url=${url:7}
-        boolean blacklist=true
+        # Split the `destination` field into `url` and `kind` -- to process URLs prefixed with the _domain_ string
+        typeset records[$i].url=${records[$i].destination}; urlkind records[$i].kind=HOST
+        [[ ${records[$i].url:0:7} == 'domain ' ]] && records[$i].kind=DOMAIN records[$i].url=${records[$i].url:7}
+
+        # By default, we assume all provided rules are global, and that the associated rule should be blacklisted
+        boolean records[$i].global=true
 
         # Ignore entries which have already been referenced
-        grep "^$url\$" {black,white}list.{domains,addresses,hosts} > /dev/null &&
+        # TODO We need to check all lists
+        grep "^$url\$" ${rc.vardir}/blacklist/blacklist.{domains,addresses,hosts} \
+                       ${rc.vardir}/whitelist/whitelist.{domains,addresses,hosts} > /dev/null &&
         { print "\E[2mignoring     $url\E[0m"; (( ++ processed )); continue; }
 
         # Open URL in browser (background load)
-        open -g "http://$url"
+        # TODO We should run a whois here
+        # open -g "http://${records[$i].url}"
+
 
         # Collect user's input as to what to do with this entry
         while true; do
 
-            printf "$url: $prompt"; read -n 1 -N 1 action; printf '\r\E[M'
+            # Clear display and print header
+            clear; print "$ps0"
 
+            # Output the current rule's definition
+            typeset key; for key in url domain process direction port protocol owner priority; do
+                nameref value=records[$i].$key
+                printf '\E[0;2m%-15s\E[0m %s\n' $key "$value"
+            done
+
+            (( records[i].kind == IPv4 || records[i].kind == IPv6 )) &&
+            nslookup "${records[$i].url}" | sed "s/^/$ps3/;s/:/:$ps4/"
+
+            # Initialise defaults
+            typeset list=''
+            boolean global=false
+
+            # Display prompt
+            printf "$ps1 "; read -n 1 -N 1 action; printf '\r\E[M'
+
+            # Collect user input
             case $action in
-            [Bb]) print "\E[31mblacklisting $url\E[0m"; [[ $action == B ]] && domain=false ;;
-            [Ww]) print "\E[32mwhitelisting $url\E[0m"; [[ $action == W ]] && domain=false blacklist=false ;;
-            i)    print "\E[2mignoring     $url\E[0m"; (( ++ processed )); break ;;
-            a)    print "\E[2maborting\E[0m";          break ;;
-            *)    continue ;;
+            [AaBbNnSsWw])
+
+                case $action in
+                    a) list=appstore  global=true ;; A) list=appstore  global=false ;;
+                    b) list=blacklist global=true ;; B) list=blacklist global=false ;;
+                    n) list=noupdate  global=true ;; N) list=noupdate  global=false ;;
+                    s) list=services  global=true ;; S) list=services  global=false ;;
+                    w) list=whitelist global=true ;; W) list=whitelist global=false ;;
+                esac
+
+                while true; do
+                    printf "$ps2 "; read -n 1 -N 1 action; printf '\r\E[M'
+
+                    case $action in
+                        a)      print "\E[2maborting\E[0m"; break ;;
+                        [dD])   scope=domain    ;;
+                        [hH])   scope=host      ;;
+                        [iI])   scope=ip        ;;
+                    esac
+
+                    print "\E[31m→ list=$list global=$global scope=$scope\E[0m"
+                    nslookup=false
+                    break
+
+                done
+
+                # Handle user requested aborts up-front
+                [[ $action == a ]] && break
+
+                ;;
+
+            [46])   nslookup=true; continue ;;
+            i)      print "\E[2mignoring     $url\E[0m"; (( ++ processed )); break ;;
+            a)      print "\E[2maborting\E[0m";          break ;;
+            *)      continue ;;
             esac
+
+            # For now...
+            continue
 
             typeset basename=blacklist; (( blacklist == false )) && basename=whitelist
 
@@ -77,7 +389,7 @@ function snitch_addurls { # [ --clipboard ] [ FILE ... ]
             then typeset extension=domains
             else typeset extension=hosts; fi
 
-            typeset file="$basename.$extension"
+            typeset file="${rc.vardir}/$basename/$basename.$extension"
             print "> updating $file with $url"
             sed -i '' $'$a\\\n'" $url" $file
 
@@ -90,8 +402,7 @@ function snitch_addurls { # [ --clipboard ] [ FILE ... ]
 
     done
 
-    print -f '\E[35mplease re-enable Little Snitch and hit <ENTER> to continue ... \E[0m'
-    read -n 1 -N 1 null; printf '\r\E[M'
+    snitch_toggle_application on
 
     print -- "\nSummary:\n- Processed $processed/$count URLs"
     print -- "- \E[31m$blacklisted blacklisted\E[0m and \E[32m$whitelisted whitelisted\E[0m URLs"
@@ -101,17 +412,34 @@ function snitch_addurls { # [ --clipboard ] [ FILE ... ]
 # Import Little Snitch rules in clipboard syntax
 function snitch_pbimport { # [ @records ] [ --clipboard ] source-file
 
+    #! This function provides a way of parsing the clipboard syntax of Little Snitch rules -- which, until recently, was the only
+    #! way to interact with the software. Rules are copied to the clipboard from the Little Snitch rules window. This function can
+    #! either directly parse the contents of the clipboard, or, if such content was persisted to a file, the contents of such
+    #! files.
+    #!
+    #! The output is a KAML array of compound records containing the following fields:
+    #!
+    #! - action
+    #! - direction
+    #! - priority
+    #! - process
+    #! - owner
+    #! - destination
+    #! - port
+    #! - protocol
+    #! - notes
+
     # Determine whether we are handling a by-reference call
     boolean byref=false; [[ -n $1 && ${1:0:1} == @ ]] && { byref=true; nameref records=${1:1}; shift; }
 
-    # See if we should be using the clipboard otherwise collect the source file (or stream) to be processed
-    boolean clipboard=false; [[ -n $1 && $1 == --clipboard ]] && { clipboard=true; shift; } || typeset source=${1:--}
+    # Collect the source file (or stream) to be processed
+    typeset source=${1:--}
 
     # Initialise the results set array and its associated counter
     typeset -a records; integer count=0
 
     # Parse the input and construct the results set in the `records` array
-    typeset key value; ( (( clipboard == true )) && pbpaste || cat $source ) | while read key value; do
+    typeset key value; ( (( rc.clipboard == true )) && pbpaste || cat $source ) | while read key value; do
 
         # Make sure we have something to process
         [[ -n $key ]] || continue
@@ -263,10 +591,7 @@ function snitch_rssheader { # LABEL
 # Append URLs to RSS feed source files
 function snitch_cmd_addurls { # [ FILE ... ]
 
-    # TODO for testing purposes only
-    print snitch_addurls $@
     snitch_addurls $@
-    #snitch_addurls --clipboard
 
 }
 
@@ -286,6 +611,17 @@ function snitch_cmd_buildrss { # [ 'all' | 'black' | 'white' ]
     print -u2 "\E[2m$cmd: \E[0;1m$scope\E[0;2m: \E[0;31munrecognised RSS scope\E[0m"
     print -u2 "Run \E[1m$cmd --man\E[0m for this command's UNIX man(1) page."
     exit 2
+
+}
+
+# List Little Snitch rules
+function snitch_cmd_listrules {
+
+    print -u2 "${rc.ansi.prompt}Little Snitch has changed the format of the file where it stores its rules."
+    print -u2 $'I don\'t know how to read this new file format. Consequently the \'list-rules\' command has become useless.'
+    print -u2 'This is a pity, I do not understand the added value of hiding/crypting this file.'
+    print -u2 '\nIn the mean time bare with me and hope that Objective Development releases the file format,'
+    print -u2 "or that the community figures it out.${rc.ansi.plain}"
 
 }
 
@@ -317,6 +653,7 @@ set of key/value pairs as shown below. Only the \bdestination\b key/value pair i
     port:: 443
     protocol:: 6
     notes:: This rule is necessary if you want to use iCloud services.]
+[c:clipboard]
 [f:flat?Assume one URL per input line.]
 
 [ \b-\b | \bfile ...\b ]'
@@ -432,13 +769,16 @@ esac
 
 # Process command line command
 while getopts -a "$progname" "$usage" option; do case $option in
+    c)  rc.use_clipboard=true ;;
     *) ;;
 esac; done; (( OPTIND > 1 )) && shift $(( OPTIND - 1 )); OPTIND=1
 
 # @}
 # @{ MAIN
 
-snitch_cmd_${rc.command} "$@"
+#snitch_cmd_${rc.command} "$@"
+snitch_cmd_listrules
+#pbpaste
 
 # @}
 # vim: nospell

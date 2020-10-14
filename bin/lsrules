@@ -1,6 +1,25 @@
 #! /bin/ksh
-#! @revision  2019-09-20 (Fri) 05:02:55
+#! @revision  2019-11-11 (Mon) 16:10:54
 #! @brief     Little snitch rule management utility
+
+
+    #! A rule definition line is composed as 
+    #!
+    #!      rule        := <action> ' ' <netspec> ' ' <dirspec> ' ' <scope> ' ' <list>
+    #!      action      := '+' | '-'
+    #!      netspec     := <protocols> ( '/' <ports> )?
+    #!      protocols   := <protocol> ( ',' <protocol> )*
+    #!      ports       := <port> ( ',' <port> )*
+    #!      dirspec     := <incoming> | <outgoing> | <both>
+    #!      incoming    := 'in' | 'incoming'
+    #!      outgoing    := 'out' | 'outgoing'
+    #!      both        := '*' | 'both'
+    #!      scope       := <me> | <any> | <system> | <all>
+    #!      me          := 'user' | 'me'
+    #!      any         := 'users' | 'any'
+    #!      system      := 'system' | 'sys'
+    #!      all         := '*' | 'all'
+    #!      list        :=
 
 # @{ INIT
 
@@ -19,9 +38,6 @@ typeset cli_mode='any'
 # @}
 # @{ FUNC
 
-function compress {
-
-}
 # @{ list2full
 
 function list2full {
@@ -52,6 +68,93 @@ function list2full {
 # @}
 # @{ abbr2full
 
+function snitch_shortrule_parse_addresses {
+    ;
+}
+
+# Parse the directions of a short rule
+function snitch_shortrule_parse_direction {
+
+    #! A short rule's direction can be specified as one of:
+    #! - 'in' or 'incoming'
+    #! - 'out' or 'outgoing'
+    #! - '*', 'any' or 'both'
+
+    case $1 in
+    in|incoming)    return 1 ;;
+    out|outgoing)   return 2 ;;
+    '*'|any|both)   return 3 ;;
+    *)              return 0 ;;
+    esac
+
+}
+
+# Parse the network services in scope of a short rule
+function snitch_shortrule_parse_netspec {
+    # Extract the services from the network specifications
+    typeset service=${netspec%/*}; typeset -A services; for service in ${service//,/ }; do
+
+        # Handle case where service is specified with its port number
+        [[ $service == +([0-9]) ]] && { services[$service]=true; continue; }
+
+        # Otherwise lookup service and extract port(s)
+        typeset svc; for svc in $(grep "^$service[[:space:]]" /etc/services |\
+            awk '{print $2}' | sed 's,/.*,,' | sort -u)
+        do services[$svc]=true
+        done
+
+    done
+
+    # Extract the protocols from the network specifications
+    typeset protocol=${netspec#*/}
+    typeset -A protocols
+    for protocol in ${protocol//,/ }; do
+
+        # Handle case where protocol is specified with its port number
+        [[ $protocol == +([0-9]) ]] && { protocols[$protocol]=true; continue; }
+
+        # Otherwise lookup protocol and extract port(s)
+        typeset pro; for pro in $(grep "^$protocol[[:space:]]" /etc/protocols |\
+            awk '{print $2}' | sed 's,/.*,,' | sort -u)
+        do protocols[$pro]=true
+        done
+
+    done
+
+}
+
+# Determine the rule's ownership
+function snitch_shortrule_parse_ownership {
+
+    # Collect the scope (i.e. mode) for this rule
+    typeset scope=; typeset -A scopes; case ${mode:-NONE} in
+    me|user)    scopes[me]=true     ;;
+    any|users)  scopes[any]=true    ;;
+    sys|system) scopes[system]=true ;;
+    '*'|all)    scopes+=( [me]=true [system]=true [any]=true ) ;;
+    *)          print -u2 "Invalid scope: $mode"; exit 1 ;;
+    esac
+
+
+}
+
+function snitch_shortrule_parse {
+
+    # Split the line under scrunity into its base components
+    typeset action netspec dirspec mode list
+    print -- "$1" | read action netspec dirspec mode list
+
+    # Convert action into appropriate tokens for Little Snitch
+    [[ $action == '+' ]] && action="allow" || action="deny"
+
+    # Parse the short rule's direction
+    snitch_shortrule_parse_direction $dirspec; integer direction=$?
+
+    # Parse the services in scope of this short rule
+    typeset -A services; snitch_shortrule_parse_services  @services $netspec
+
+}
+
 function abbr2full {
 
     typeset     file=${1:-/dev/stdin}   #!< Collect name of file to process
@@ -67,168 +170,109 @@ function abbr2full {
     typeset     processes               #!< Array that holds all the processes and binary files to which rules are assigned
     integer     rules=0                 #!< Counter used to keep track of the count of rules for processes under scrutiny
 
-    # We process the input file or stream line by line. Piping the content of the source stream through the `read(1)` commmand is a cricital
-    # component here as we are using this utility to read POSIX line continuation marks (i.e. a backslash at the end of a line). This is a single pass
-    # operation to allow for the parsed `$file` to be a stream fed through a pipe.
+    # We process the input file or stream line by line. Piping the content of the source stream through the `read(1)` commmand is
+    # a cricital component here as we are using this utility to read POSIX line continuation marks (i.e. a backslash at the end
+    # of a line). This is a single pass operation to allow for the parsed `$file` to be a stream fed through a pipe.
 
     cat $file | while read line; do
 
-        # We keep track of the line number (`linenb`). This information is not currently used by this utility beyond providing
-        # some useful debugging information to locate invalid constructs or other ambiguous or non-processable content.
+        (( ++ linenb )); case ${line:0:1} in
 
-        (( ++ linenb ))
+        '?')
 
-        # Parsing our Little Snitch Rules (lsr) files is quite straightforward. We simply need to recognise the first character of
-        # each line. Handling of line continuation has already been done by the `read(1)` command. We will be looking out for:
-        #
-        # - Comment lines       '#'
-        # - Help text           '?'
-        # - Process paths       '%'
-        # - Rule definitions    '+' or '-'
+            # Help text
+            [[ $lastag == '?' ]] && helptext+="${line#?*([[:space:]])}" || helptext="${line#?*([[:space:]])}"
+            lasttag=${line:0:1}
 
-        case ${line:0:1} in
-        '?')    # Help text
+            ;;
+        '%')
 
-                [[ $lastag == '?' ]] && helptext+="${line#?*([[:space:]])}" || helptext="${line#?*([[:space:]])}"
-                lasttag=${line:0:1}
+            # Process path
+            (( rules > 0 )) && { rules=0; unset processes autosort; }
+            lasttag=${line:0:1}
 
-                ;;
-        '%')    # @{ Process path
+            typeset process="${line#%*([[:space:]])}"
+            [[ -n ${autosort["$process"]} ]] && continue
+            autosort["$process"]=true
+            processes+=("$process")
 
-                (( rules > 0 )) && { rules=0; unset processes autosort; }
-                lasttag=${line:0:1}
+            ;;
+        [+-])
+            # Rule definition
+            (( ++ rules       ))
+            (( ++ sourcerules ))
 
-                typeset process="${line#%*([[:space:]])}"
-                [[ -n ${autosort["$process"]} ]] && continue
-                autosort["$process"]=true
-                processes+=("$process")
+            lasttag=${line:0:1}
 
-                ;; # @}
-        [+-])   # @{ Rule definition
+            # @{ Step 1: Parse the rule definition line
 
-                (( ++ rules       ))
-                (( ++ sourcerules ))
-
-                lasttag=${line:0:1}
-
-                # @{ Step 1: Parse the rule definition line
-
-                # Split the line under scrunity into its base components
-                typeset action netspec dirspec mode list
-                print -- "$line" | read action netspec dirspec mode list
-
-                # Convert action into appropriate tokens for Little Snitch
-                [[ $action == '+' ]] && action="allow" || action="deny"
-
-                # Extract the services from the network specifications
-                typeset service=${netspec%/*}; typeset -A services; for service in ${service//,/ }; do
-
-                    # Handle case where service is specified with its port number
-                    [[ $service == +([0-9]) ]] && { services[$service]=true; continue; }
-
-                    # Otherwise lookup service and extract port(s)
-                    typeset svc; for svc in $(grep "^$service[[:space:]]" /etc/services |\
-                        awk '{print $2}' | sed 's,/.*,,' | sort -u)
-                    do services[$svc]=true
-                    done
-
-                done
-
-                # Extract the protocols from the network specifications
-                typeset protocol=${netspec#*/}
-                typeset -A protocols
-                for protocol in ${protocol//,/ }; do
-
-                    # Handle case where protocol is specified with its port number
-                    [[ $protocol == +([0-9]) ]] && { protocols[$protocol]=true; continue; }
-
-                    # Otherwise lookup protocol and extract port(s)
-                    typeset pro; for pro in $(grep "^$protocol[[:space:]]" /etc/protocols |\
-                        awk '{print $2}' | sed 's,/.*,,' | sort -u)
-                    do protocols[$pro]=true
-                    done
-
-                done
-
-                # Collect the directions for this rule
-                typeset direction
-                typeset -A directions
-                dirspec=${dirspec//both/in\/out}
-                for direction in ${dirspec//\/ }; do
-                    case $direction in
-                        in|incoming)    directions[incoming]=true ;;
-                        out|outgoing)   directions[outgoing]=true ;;
-                        *)              print -u2 "$file: $linInvalid direction: $direction"
-                                        exit 1
-                                        ;;
-                    esac
-                done
-
-                # Collect the scope (i.e. mode) for this rule
-                typeset scope=; typeset -A scopes; case ${mode:-NONE} in
-                me|user)    scopes[me]=true     ;;
-                any|users)  scopes[any]=true    ;;
-                sys|system) scopes[system]=true ;;
-                '*'|all)    scopes+=( [me]=true [system]=true [any]=true ) ;;
-                *)          print -u2 "Invalid scope: $mode"; exit 1 ;;
+            dirspec=${dirspec//both/in\/out}
+            for direction in ${dirspec//\/ }; do
+                case $direction in
+                    in|incoming)    directions[incoming]=true ;;
+                    out|outgoing)   directions[outgoing]=true ;;
+                    *)              print -u2 "$file: $linInvalid direction: $direction"
+                                    exit 1
+                                    ;;
                 esac
+            done
 
-                # Finally process all destinations
-                typeset item; typeset -A addresses domains names keywords; for item in $list; do
-                    if   [[ ${item:0:7} == "domain:" ]]
-                    then domains[${item#domain:}]=true
-                    elif [[ $item == {1,3}([0-9]){0,2}(\.{1,3}([0-9])){1}(/+([0-9])) ]]
-                    then addresses[$item]=true
-                    elif [[ $item == {1,3}([0-9]){3}(\.{1,3}([0-9])){0,1}(/+([0-9])) ]]
-                    then addresses[$item]=true
-                    elif [[ $item == @(local-net|dns-servers|broadcast|bonjour|multicast) ]]
-                    then keywords[$item]=true
+            # Finally process all destinations
+            typeset item; typeset -A addresses domains names keywords; for item in $list; do
+                if   [[ ${item:0:7} == "domain:" ]]
+                then domains[${item#domain:}]=true
+                elif [[ $item == {1,3}([0-9]){0,2}(\.{1,3}([0-9])){1}(/+([0-9])) ]]
+                then addresses[$item]=true
+                elif [[ $item == {1,3}([0-9]){3}(\.{1,3}([0-9])){0,1}(/+([0-9])) ]]
+                then addresses[$item]=true
+                elif [[ $item == @(local-net|dns-servers|broadcast|bonjour|multicast) ]]
+                then keywords[$item]=true
 print "Adding keywords: $item"
-                    else names[$item]=true
-                    fi
-                done
+                else names[$item]=true
+                fi
+            done
 
-                # Let's clean the house a little
-                unset dirspec mode netspec
+            # Let's clean the house a little
+            unset dirspec mode netspec
 
-                # @}
-                # @{ Step 2: Convert the definition line into Little Snitch rules
+            # @}
+            # @{ Step 2: Convert the definition line into Little Snitch rules
 
-                for (( i=0; i < ${#processes[@]}; ++ i )); do
+            for (( i=0; i < ${#processes[@]}; ++ i )); do
 print "Process id is $i"
-                    process="${processes[$i]}"
-                    for direction in ${!directions[@]}; do
-                        for service in ${!services[@]}; do
-                            for protocol in ${!protocols[@]}; do
-                                for scope in ${!scopes[@]}; do
+                process="${processes[$i]}"
+                for direction in ${!directions[@]}; do
+                    for service in ${!services[@]}; do
+                        for protocol in ${!protocols[@]}; do
+                            for scope in ${!scopes[@]}; do
 
-                                    typeset record=$(
-                                        print "action: $action";
-                                        print "direction: $direction";
-                                        print "process: $process";
-                                        print "owner: $scope";
-                                        print "port: $service";
-                                        print "protocol: $protocol";
-                                        print "help: $(date +%Y%m%d-%H%M) - ${helptext:-Auto-generated rule} [$source]";
-                                    )
+                                typeset record=$(
+                                    print "action: $action";
+                                    print "direction: $direction";
+                                    print "process: $process";
+                                    print "owner: $scope";
+                                    print "port: $service";
+                                    print "protocol: $protocol";
+                                    print "help: $(date +%Y%m%d-%H%M) - ${helptext:-Auto-generated rule} [$source]";
+                                )
 
 print -- "keywords: ${!keywords[@]}"
-                                    (( ${#addresses[@]} > 0 )) && (( ++targetrules )) && print "$record\ndestination: ${!addresses[@]}\n";
-                                    (( ${#keywords[@]}  > 0 )) && (( ++targetrules )) && print "$record\ndestination: ${!keywords[@]}\n";
-                                    (( ${#names[@]}     > 0 )) && (( ++targetrules )) && print "$record\ndestination: ${!names[@]}\n";
-                                    (( ${#domains[@]}   > 0 )) && (( ++targetrules )) && print "$record\ndestination: domain ${!domains[@]}\n";
+                                (( ${#addresses[@]} > 0 )) && (( ++targetrules )) && print "$record\ndestination: ${!addresses[@]}\n";
+                                (( ${#keywords[@]}  > 0 )) && (( ++targetrules )) && print "$record\ndestination: ${!keywords[@]}\n";
+                                (( ${#names[@]}     > 0 )) && (( ++targetrules )) && print "$record\ndestination: ${!names[@]}\n";
+                                (( ${#domains[@]}   > 0 )) && (( ++targetrules )) && print "$record\ndestination: domain ${!domains[@]}\n";
 
-                                done
                             done
                         done
                     done
                 done
+            done
 
-                unset addresses directions domains keywords names processes protocols scopes services
+            unset addresses directions domains keywords names processes protocols scopes services
 
-                # @}
+            # @}
 
-                ;; # @}
+            ;; # @}
         ''|'#') # @{ Comment line (and blank lines)
                 # Comments are silently ignored. They do not affect state logic.
                 ;; # @}
@@ -456,15 +500,6 @@ unset usage
 # @{ MAIN
 
 [[ -n $action ]] && case $action in
-list)
-
-    print -u2 '\E[31mLittle Snitch has changed the format of the file where it stores its rules.\E[0m\n' \
-        $'\rI don\'t know how to read this new file format. Consequently the \E[1mlist\E[0m command has become useless.\n' \
-        '\r\E[2mThis is a pity, I do not understand the added value of hiding/crypting this file.\n' \
-        '\rIn the mean time bare with me and hope that Objective Development releases the file format, or that the community'\
-        'figures it out.\E[0m'
-
-    ;;
 convert)
 
     typeset command=abbr2full;  (( islist > 0 )) && command=list2full

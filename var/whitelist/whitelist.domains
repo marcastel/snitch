@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2019-09-22 (Sun) 03:14:34
+#! @revision 2020-10-14 (Wed) 19:59:17
 #  vim: nospell spelllang=en
 
 1stwebdesigner.com
@@ -1447,6 +1447,7 @@ rd.com
 rdbrmc.com
 redd.it
 redditmedia.com
+redditstatic.com
 reflexology-map.com
 rossboxing.com
 rosselcdn.net
@@ -1496,3 +1497,25 @@ virginia.edu
 visoflora.com
 vistaprint.com
 vistaprint.fr
+urba-kids.ch
+urbanproject-sa.ch
+userlike.com
+usf.edu
+varietescuisinecongo.com
+vectorlogo.zone
+vectorstock.com
+w3resource.com
+wclink.co
+wdc.com
+webkul.com
+wpmucdn.com
+wpmudev.com
+www8-hp.com
+xerox.bz
+xerox.com
+xerox.fr
+xwidget.com
+youtu.be
+zergnet.com
+ziffstatic.com
+zsz.ch
