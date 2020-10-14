@@ -1,0 +1,34 @@
+#! ksh
+
+function snitch_hlp_addurls {
+nameref usage=${1:1}
+usage+="[+NAME?${rc.progname} ${rc.command}"$' -- interactively add URLs]
+[+DESCRIPTION?This command intended to provide a semi-automated way of classifying URLs as white- or black-listed. The default
+behaviour, when called without command line arguments, is to process the contents of the clipboard. Otherwise each provided
+argument is assumed to be a file and will be parsed accordingly. Each parsed URL is loaded in your default Internet browser; the
+browser application will be loaded in the background so that your terminal session doesn\'t lose its focus. The URL\'s name will
+be displayed and a menu will allow you to mark the URL as black- or white-listed. You may also ignore the URL; the URL will be
+automatically ignored if it has already been appended to any existing list. URLs are automatically dispatched in the appropriate
+data file depending on whether we are considering domain names, host names or IP addresses -- only IPv4 addresses are currently
+supported.]
+[+?Unless the \b--flat\b option has been given, the input is expected to be one or more Little Snitch rules as obtained when
+selecting rules in the \bLittle Snitch Configuration\b application and copying then to the clipboard. Each rule is defined as a
+set of key/value pairs as shown below. Only the \bdestination\b key/value pair is retained and all others are discarded. If the
+\b--flat\b option is given, then each input line is assumed to be a regular URL.][+\
+    action:: allow
+    direction:: outgoing
+    priority:: regular
+    process:: any
+    owner:: system
+    destination:: domain icloud.com, icloud-content.com
+    port:: 443
+    protocol:: 6
+    notes:: This rule is necessary if you want to use iCloud services.]
+[c:clipboard]
+[f:flat?Assume one URL per input line.]
+
+[ \b-\b | \bfile ...\b ]'
+
+}
+
+# __END__
