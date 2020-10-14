@@ -1,0 +1,22 @@
+#! ksh
+
+# Construct Little Snitch RSS feed (either blacklist or whitelist)
+function snitch_rssfeed { # [ 'white' | 'black' ]
+
+    typeset kind=${1:-black}
+
+    if [[ $kind == black ]]; then (
+        snitch_rssheader 'ISLE Blacklist' 'Disabled Internet resources for any process (and any user).'
+        snitch_rssdisabled
+        snitch_rssfooter
+    )   | ${rc.jq} > ${rc.vardir}/blacklist/blacklist.lsrules
+
+    else (
+        snitch_rssheader 'ISLE Whitelist' 'Allowed HTTP(S) targets for any process (and any user).'
+        snitch_rssallowed
+        snitch_rssfooter
+    )   | ${rc.jq} > ${rc.vardir}/whitelist/whitelist.lsrules; fi
+
+}
+
+# __END__
