@@ -1,0 +1,10 @@
+#! ksh
+
+# Append URLs to RSS feed source files
+function snitch_cmd_addurls { # [ FILE ... ]
+
+    snitch_addurls $@
+
+}
+
+# __END__
