@@ -1,0 +1,52 @@
+#! ksh
+
+# Construct Little Snitch RSS rule for whitelisted destination
+function snitch_rssallowed { # <no-params>
+
+    typeset fmt='{ "action" : "allow", "ports" : "%s", "process" : "any", "protocol" : "tcp", "remote-%s" : "%s" }'
+    integer count=0; typeset all=( addresses domains hosts )
+
+    # Determine the number of entries that we will process
+    typeset file; for file in ${all[@]}; do
+
+        # Make sure the definition file exists
+        file=${rc.vardir}/whitelist/whitelist.$file; [[ -f $file ]] || continue;
+
+        # Count number of definition lines in file
+        count+=$(grep -v '^#' $file | grep -v '^$' | wc -l)
+
+    done
+
+    # Make sure we have something to process
+    (( count > 0 )) || return
+
+    printf '"rules": [\n'
+
+    # Process all possible definition files
+    for file in ${all[@]}; do
+
+        # Make sure the definition file exists
+        typeset path=${rc.vardir}/whitelist/whitelist.$file; [[ -f $path ]] || continue
+
+        # Read the definition file, line by line
+        typeset line; cat $path | while read line; do
+
+            # Ignore empty lines and comments
+            [[ -z $line || ${line:0:1} == '#' ]] && continue
+
+            # Determine if we should append a JSON comma
+            typeset comma=','; (( -- count > 0 )) || comma=
+
+            # Output the JSON line
+            printf "$fmt,\n$fmt$comma\n" 80 $file $line 443 $file $line
+
+        done
+
+    done
+
+    printf ']\n'
+
+}
+
+
+# __END__
