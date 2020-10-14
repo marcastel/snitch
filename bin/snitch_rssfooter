@@ -1,0 +1,10 @@
+#! ksh
+
+# Construct Little Snitch RSS feed footer
+function snitch_rssfooter { # <no-param>
+
+    printf '}\n'
+
+}
+
+# __END__
