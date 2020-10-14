@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2020-10-14 (Wed) 23:00:05
+#! @revision 2020-10-14 (Wed) 23:04:55
 #  vim: nospell spelllang=en
 
 118218.fr
@@ -1501,6 +1501,7 @@ yimg.com
 ymarks.org
 youtu.be
 youtube.com
+yoyo.org
 ytimg.com
 yworks.com
 zapier.com
