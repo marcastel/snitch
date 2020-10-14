@@ -1,0 +1,15 @@
+#! ksh
+
+# List Little Snitch rules
+function snitch_cmd_listrules {
+
+    print -u2 "${rc.ansi.prompt}Little Snitch has changed the format of the file where it stores its rules."
+    print -u2 $'I don\'t know how to read this new file format. Consequently the \'list-rules\' command has become useless.'
+    print -u2 'This is a pity, I do not understand the added value of hiding/crypting this file.'
+    print -u2 '\nIn the mean time bare with me and hope that Objective Development releases the file format,'
+    print -u2 "or that the community figures it out.${rc.ansi.plain}"
+
+}
+
+
+# __END__
