@@ -1,0 +1,10 @@
+#! /bin/ksh
+#! @brief Sample _external_ command
+
+# Collect the run command (rc) settings from caller
+eval "$1"; shift
+
+# Perform whatever processing you wish
+print "${rc.progname} command *${rc.command}* called with arguments: $@"
+
+# vim: nospell
