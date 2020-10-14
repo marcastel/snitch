@@ -1,4 +1,4 @@
-#! @revision 2019-11-03 (Sun) 04:47:06
+#! @revision 2020-10-14 (Wed) 20:47:44
 #! @brief    Blacklisted domains
 #  vim: nospell spelllang=en
 
@@ -1698,8 +1698,6 @@ readersdigest.in
 readlibs.com
 readserver.net
 readspeaker.com
-readthedocs.io
-readthedocs.org
 realcastmedia.com
 realclix.com
 realtechnetwork.com
@@ -2263,7 +2261,6 @@ zebestof.com
 zedo.com
 zemanta.com
 zenaps.com
-zencdn.net
 zenkreka.com
 zenzuu.com
 zeotap.com
