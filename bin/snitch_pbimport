@@ -1,0 +1,54 @@
+#! ksh
+
+# Import Little Snitch rules in clipboard syntax
+function snitch_pbimport { # [ @records ] [ --clipboard ] source-file
+
+    #! This function provides a way of parsing the clipboard syntax of Little Snitch rules -- which, until recently, was the only
+    #! way to interact with the software. Rules are copied to the clipboard from the Little Snitch rules window. This function can
+    #! either directly parse the contents of the clipboard, or, if such content was persisted to a file, the contents of such
+    #! files.
+    #!
+    #! The output is a KAML array of compound records containing the following fields:
+    #!
+    #! - action
+    #! - direction
+    #! - priority
+    #! - process
+    #! - owner
+    #! - destination
+    #! - port
+    #! - protocol
+    #! - notes
+
+    # Determine whether we are handling a by-reference call
+    boolean byref=false; [[ -n $1 && ${1:0:1} == @ ]] && { byref=true; nameref records=${1:1}; shift; }
+
+    # Collect the source file (or stream) to be processed
+    typeset source=${1:--}
+
+    # Initialise the results set array and its associated counter
+    typeset -a records; integer count=0
+
+    # Parse the input and construct the results set in the `records` array
+    typeset key value; ( (( rc.clipboard == true )) && pbpaste || cat $source ) | while read key value; do
+
+        # Make sure we have something to process
+        [[ -n $key ]] || continue
+
+        # Trim colon from key and, if applicable, initialise new record
+        key=${key%:}; [[ $key == action ]] && typeset -C records[$count]
+
+        # Save the collected key/value pair
+        nameref field=records[$count].$key; field="$value"
+
+        # If we are in presence of the last record field, increment counter
+        [[ $key == notes ]] && (( ++ count ))
+
+    done
+
+    # Unless called by reference, dump the results set
+    (( byref == false  )) && print -v records
+
+}
+
+# __END__
