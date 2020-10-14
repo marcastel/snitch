@@ -1,0 +1,11 @@
+#! ksh
+
+# Construct Little Snitch RSS feed header
+function snitch_rssheader { # LABEL
+
+    typeset name="$1" brief="$2"
+    printf '{\n"name": "%s",\n"description": "%s",\n' "$name" "$brief"
+
+}
+
+# __END__
