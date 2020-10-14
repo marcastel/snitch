@@ -1,0 +1,13 @@
+#! ksh
+
+# Prompt user for <ENTER> key
+function snitch_pause {
+
+    typeset text="$1"; [[ -n $1 ]] && text+='; hit <ENTER> to continue ...' || text='Hit <ENTER> to continue ...'
+
+    printf "${rc.ansi.prompt}$text${rc.ansi.plain}"
+    read -n 1 -N 1 null; printf ${rc.ansi.ceos}
+
+}
+
+# __END__
