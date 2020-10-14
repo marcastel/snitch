@@ -1,0 +1,81 @@
+#! ksh
+
+function snitch_hlp_expand {
+nameref usage=${1:1}
+usage+="[+NAME?${rc.progname} ${rc.command}"$' -- interactively add URLs]
+[+DESCRIPTION?Little Snitch\'s plain ASCII rule specifications are quite verbose spawning multiple lines; definition files can
+become very very big!]
+[+CONFIGURATION FILE SYNTAX?Configuration files utility provide some syntaxic sugar to define abbreviated rules that are then
+easily converted to Little Snitch rules using this utility using the \bconvert\b action.]
+[+?Though not mandatory, it is recommended to name configuration files with the \b.lsr\b extension, which is the abbreviation
+for \bLittle Snitch rule\b. It is also recommended to group configuration files by topic in subdirectories. A typical
+subdirectory split could look like this:][+\
+        devices/        # Peripherals and devices (printers, ...)
+        foss/           # Open source components (Firefox, ...)
+        services/       # Online-services (SaSS, ...)
+        software/       # Licensed software
+        system/         # System processes
+        web/            # Web sites (http, https)]
+[+?Configuration files are line-based records identified by the first character of the line.]{
+        [%%?Process path]
+        [????Help line]
+        [++/-?Abbreviated rule]
+        [##?Comment line]}
+[+Process path?The process path provides the absolute path of the MacOS binary to which subsequent abbreviated rules apply.][+\
+        % /Applications/Mail.app/Contents/MacOS/Mail]
+[+?Multiple process paths can be specified, one process path per line. Subsequent abbreviated rules will be applied to all process
+paths. Imagine for instance defining a set of web browser rules for all browser applications installed on your Mac. Whenever a
+process path is encountered after one or more abbreviated rules, the previous list of process paths is discarded; this allows to
+contain multiple process groups, each with their own set of rules.]
+[+Help line?A help line can be associated to a process path. This help line will be embedded in each generated rule and will be
+visible in the Little Snitch application, once the generated rules have been imported. Multiple contiguous help lines will be
+concatenated into a single help line.]
+[+?The help line will be prefixed with a timestamp (\v%Y%m%d-%H%M%S\v) and suffixed with the name of the rules definition file
+being processed.]
+[+Abbreviated rule?Each rule definition line looks like this:][+\
+        <action> <service>/<protocol> <direction> <scope> <destination> ...]
+[+?where:]{
+[action? The action Little Snitch should take when enacting this rule; this is either the \v+\v or \v-\v symbol, to respectively
+allow or deny the connection.]
+[service?This is either a service name or a port number. If a service name is provided, it will be looked up in \v/etc/services\v
+and converted into a port number. Multiple services may be provided, separated by a comma (e.g. \v80,8080,443\v).]
+[protocol?This is either the protocol name or its associated number as found in \v/etc/protocols\v. Protocol names are converted
+to a number. Multiple protocols can be specified, separated by a comma (e.g. \vtcp,udp\v).]
+[direction?This allows to specify whether the rule applies to outgoing communications (\vout\v), incoming communications (\vin\v),
+or both (\vin/out\v).]
+[scope?The scope allows to restrict the rule definition line to the current user (\vuser\v), to system processes (\vsys\v) or, on
+the contrary, to be enabled for everyone (\v*\v).]
+[destination?Destination can be either an IP address, a host name or a domain name. Multiple destinations can be specified on a
+same line. Each destination should be separated from the next by at least one space. IP addresses, host names, and domain names
+can be freely mixed.]{
+[local-net  ?Local network]
+[dns-servers?DNS servers]
+[broadcast  ?Broadcast addresses]
+[bonjour    ?Bonjour addresses]
+[multicast  ?Multicast addresses]}}
+[+?Rule definition lines can get quite long. Unix line-continuation marks are supported to split a rule over multiple lines, as
+illustrated in the example below:][+\
+        - http,https/tcp in/out \\
+            url1 \\
+            url2 \\
+            url3]
+[+Comment line?Comments are introduced by a hash mark, exactly as in regular shell scripts. Note however that the hash tag must be
+the first character on the line, leading whitespaces are not recognised.] [+BLACK/WHITE LISTS?Though abbreviated rules are
+significantly less verbose than normal Little Snitch rules, we often need plain black lists (and white lists) to apply a same rule
+to a wide range of hosts and domains. This behaviour is toggled with the \v--blacklist\v and \v--whitelist\v options that both
+trigger the \blist mode\b. In this mode, the file parser doesn\'t expect a configuration file syntax, but rather a flat list of
+hosts, ip address and ranges, domains or reserved destination keywords.]
+[+?The aforementioned options toggle, respectively, deny and allow rules. The \v--direction\v, \v--protocol\v, \v--scope\v, and
+\v--service\v options, as well as the \v--process\v and \v--help\v options, can be used to customise the rule construction. If
+none specified, the rules will be automatically constructed for outgoing connections:][+\
+        % any
+        ?? Blacklist
+        - http,https/tcp out]
+[+DIRECTORIES]{
+        [\v'${DF_PREFIX:-/usr/df}$'/etc/snitch\v?Global Little Snitch rules]
+        [\v~/etc/snitch\v?User specific Little Snitch rules]}
+[+FILES]{[~/'$CURRENT_RULES$'?User-specific configuration file.]}'
+
+}
+
+# __END__
