@@ -1,0 +1,20 @@
+#! ksh
+
+function snitch_hlp_buildrss {
+nameref usage=${1:1}
+usage+="[+NAME?${rc.progname} ${rc.command}"$' -- build Little Snitch RSS blacklist and/or whitelist feeds.]
+[+DESCRIPTION?This command is used to convert flat files containind domain names, host names and IP addresses into the Little
+Snitch RSS syntax. Its purpose is to facilitate the management and maintenance of such rule sets. The generated file(s) can then
+be directly referenced in Little Snitch, either locally or over the net. This command should be invoked with one of three
+keywords:]{
+[+all?Build both the blacklist and the whitelist]
+[+black?Build the blacklist (alternatively: \bblacklist\b)]
+[+white?Build the whitelist (alternatively: \bwhitelist\b)]}
+[+?\bNote\b that there are no security concerns in making this file available over the Internet. Furthermore, the URLs originating
+from multiple sources, no Internet interests can be deducted; this is just noise for phishing and privacy invaders.]
+
+[ \'\ball\b\' | \'\bblack\b\' | \'\bwhite\b\' ]'
+
+}
+
+# __END__
