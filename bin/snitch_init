@@ -1,0 +1,43 @@
+#! ksh
+
+# Essential constructs and globals
+enum boolean=( false true )
+enum urlkind=( HOST DOMAIN IPv4 IPv6 )
+enum ruleset=( blacklist whitelist appstore services noupdate )
+
+typeset rc.command=none
+boolean rc.use_clipboard=false     # Process clipboard's content (add-urls)
+boolean rc.flat_file=false         # Assume each input line is an domain/hostname/IP address (add-urls)
+typeset -C rc.ansi=(
+    label=$'\E[0;2m'
+    plain=$'\E[0m'
+    prompt=$'\E[35m'
+    ceos='$\r\E[M'              # Clear to end of screen
+)
+
+export FPATH=${rc.progpath}${FPATH:+:$FPATH}
+whence -p ${rc.progname} 2>/dev/null || export PATH=${rc.progpath}:$PATH
+
+# Determine location of functions
+typeset rc.vardir=${rc.progpath%/*}/var
+
+# Collect command line command and remove it from argument list
+typeset rc.command=none; [[ -n $1 && ${1:0:1} != - ]] && { rc.command=${1//[_-]/}; shift; }
+
+typeset usage=$'[-1]' fn=${rc.progname}_hlp_${rc.command:-${rc.progname}}
+whence -q $fn || fn=${rc.progname}_hlp_${rc.progname}
+$fn @usage
+
+# Central command line options handling
+while getopts -a "${rc.progname}${rc.command:+ ${rc.command}}" "$usage" option; do case $option in
+    c)  rc.use_clipboard=true ;;
+    *) ;;
+esac; done; (( OPTIND > 1 )) && shift $(( OPTIND - 1 )); OPTIND=1
+
+# Enact the requested command, if it exists
+typeset fn=${rc.progname}_cmd_${rc.command:-none}; whence -q $fn && { $fn "$@"; exit $?; }
+typeset bin=$(which ${fn/_cmd_/-}); [[ -n $bin ]] && { $bin "$(typeset -p rc)" "$@"; exit $?; }
+print -u2 -f $'\E[2m%s\E[0m: this doesn\'t appear to be a \E[1m%s\E[0m command.\n' ${rc.command} ${rc.progname}
+exit 1
+
+# __END__
