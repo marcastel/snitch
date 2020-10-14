@@ -1,0 +1,154 @@
+#! ksh
+
+# Interactively check URLs and update white/black lists
+function snitch_addurls { # [ --clipboard ] [ FILE ... ]
+
+    #! This function is a handy utility to interactively update lists from Little Snitch rules. The usual worklflow is to, by
+    #! default, allow or deny rules for 2 hours -- the good and the bad alike. As time passes, the rules expire and get collected
+    #! in the '_expired rules_' section. Once il a while select all those rules and launch this utility as `snitch add-urls`. At
+    #! you will be doing this often, say daily, but soon this will become less and less common. You can persist expired rules to a
+    #! file and handle them later.
+    #!
+    #! Upon invocation this function will scan all rules in the clipboard or in a specified file. For each rule, it will open the
+    #! related URL in the browser and prompt the caller for the handling of the rule. The URL is open in the background so that
+    #! the focus stays in the terminal window, hence avoiding switching applications all the time.
+
+    # Collect the results set array to be analysed and determine the count of records in set
+    typeset -a records; snitch_pbimport @records ${source:---clipboard}; integer count=${#records[@]}
+
+    # Make sure we have records to process
+    (( count == 0 )) && return
+
+    # Initialise counters
+    typeset counters
+
+    snitch_toggle_application off
+
+    # Initialise the prompts
+    typeset ps0= ps1= ps2=
+    ps0='\E[34;1;4mAdd Little Snitch rules\E[0m\n'
+    ps1+='\n\E[2m-----------------------------------------------------------------------------------------\E[0m\n'
+    ps1+='\E[2mlist:      \E[1;4mB\E[0;2mlacklist, \E[1;4mW\E[0;2mhitelist, \E[1;4mA\E[0;2mppStore, \E[1;4mN\E[0;2moUpdate,'
+    ps1+=' or \E[1;4mS\E[0;2mervices.\E[0;2m\n'
+    ps1+='           use uppercase to add application-specific rule or lowercase for a global rule.\E[0m\n'
+    ps1+='\E[2moptions:   IP v\E[1;4m4\E[0;2m or v\E[1;4m6\E[0;2m, \E[1;4mi\E[0;2mgnore this rule, or \E[1;4ma\E[0;2mbort.\E[0m\n'
+    ps1+='\E[2m? \E[0m'
+    ps2+='\E[2mappend:    \E[1;4mD\E[0;2momain, \E[1;4mH\E[0;2most, \E[1;4mI\E[0;2mP address (case insensitive)'
+    ps2+=' or \E[1;4ma\E[0;2mbort.\E[0m\n'
+    ps3='\E[0;2m'
+    ps4='\E[0m'
+
+    # Interactively check each URL in list
+    integer i; for (( i = 0; i < count; ++ i )); do
+
+        # Split the `destination` field into `url` and `kind` -- to process URLs prefixed with the _domain_ string
+        typeset records[$i].url=${records[$i].destination}; urlkind records[$i].kind=HOST
+        [[ ${records[$i].url:0:7} == 'domain ' ]] && records[$i].kind=DOMAIN records[$i].url=${records[$i].url:7}
+
+        # By default, we assume all provided rules are global, and that the associated rule should be blacklisted
+        boolean records[$i].global=true
+
+        # Ignore entries which have already been referenced
+        # TODO We need to check all lists
+        grep "^$url\$" ${rc.vardir}/blacklist/blacklist.{domains,addresses,hosts} \
+                       ${rc.vardir}/whitelist/whitelist.{domains,addresses,hosts} > /dev/null &&
+        { print "\E[2mignoring     $url\E[0m"; (( ++ processed )); continue; }
+
+        # Open URL in browser (background load)
+        # TODO We should run a whois here
+        # open -g "http://${records[$i].url}"
+
+
+        # Collect user's input as to what to do with this entry
+        while true; do
+
+            # Clear display and print header
+            clear; print "$ps0"
+
+            # Output the current rule's definition
+            typeset key; for key in url domain process direction port protocol owner priority; do
+                nameref value=records[$i].$key
+                printf '\E[0;2m%-15s\E[0m %s\n' $key "$value"
+            done
+
+            (( records[i].kind == IPv4 || records[i].kind == IPv6 )) &&
+            nslookup "${records[$i].url}" | sed "s/^/$ps3/;s/:/:$ps4/"
+
+            # Initialise defaults
+            typeset list=''
+            boolean global=false
+
+            # Display prompt
+            printf "$ps1 "; read -n 1 -N 1 action; printf '\r\E[M'
+
+            # Collect user input
+            case $action in
+            [AaBbNnSsWw])
+
+                case $action in
+                    a) list=appstore  global=true ;; A) list=appstore  global=false ;;
+                    b) list=blacklist global=true ;; B) list=blacklist global=false ;;
+                    n) list=noupdate  global=true ;; N) list=noupdate  global=false ;;
+                    s) list=services  global=true ;; S) list=services  global=false ;;
+                    w) list=whitelist global=true ;; W) list=whitelist global=false ;;
+                esac
+
+                while true; do
+                    printf "$ps2 "; read -n 1 -N 1 action; printf '\r\E[M'
+
+                    case $action in
+                        a)      print "\E[2maborting\E[0m"; break ;;
+                        [dD])   scope=domain    ;;
+                        [hH])   scope=host      ;;
+                        [iI])   scope=ip        ;;
+                    esac
+
+                    print "\E[31m→ list=$list global=$global scope=$scope\E[0m"
+                    nslookup=false
+                    break
+
+                done
+
+                # Handle user requested aborts up-front
+                [[ $action == a ]] && break
+
+                ;;
+
+            [46])   nslookup=true; continue ;;
+            i)      print "\E[2mignoring     $url\E[0m"; (( ++ processed )); break ;;
+            a)      print "\E[2maborting\E[0m";          break ;;
+            *)      continue ;;
+            esac
+
+            # For now...
+            continue
+
+            typeset basename=blacklist; (( blacklist == false )) && basename=whitelist
+
+            if [[ $url == ~(Ex)(?:^ \d+\.\d+.\d+.\d+ $) ]]
+            then typeset extension=addresses
+            elif (( domain == true ))
+            then typeset extension=domains
+            else typeset extension=hosts; fi
+
+            typeset file="${rc.vardir}/$basename/$basename.$extension"
+            print "> updating $file with $url"
+            sed -i '' $'$a\\\n'" $url" $file
+
+            (( ++ processed ))
+            break
+
+        done
+
+        [[ $action == a ]] && break
+
+    done
+
+    snitch_toggle_application on
+
+    print -- "\nSummary:\n- Processed $processed/$count URLs"
+    print -- "- \E[31m$blacklisted blacklisted\E[0m and \E[32m$whitelisted whitelisted\E[0m URLs"
+
+}
+
+# __END__
