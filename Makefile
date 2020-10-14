@@ -15,6 +15,6 @@ whitelist:
 	bin/snitch build-rss whitelist
 
 commit:
-	git commit -m "$$(printf 'Updates %(%F [%a] %R)T.')" *
+	git commit -m "$$(printf 'Updates %(%F [%a] %R)T.')" var/*
 	git push
 

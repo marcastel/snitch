@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2020-10-14 (Wed) 20:48:17
+#! @revision 2020-10-14 (Wed) 23:00:05
 #  vim: nospell spelllang=en
 
 118218.fr
@@ -865,6 +865,7 @@ mont-blanc-taxi.fr
 motamem.org
 moz.com
 mozilla.com
+mozilla.net
 mozilla.org
 mport.com
 msauth.net
