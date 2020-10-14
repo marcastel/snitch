@@ -1,0 +1,16 @@
+#! ksh
+
+# Prompt user to enable/disable Little Snitch
+function snitch_toggle_application {
+
+    [[ -n $1 ]] && typeset -l mode=$1 || return
+
+    typeset text; [[ $mode == @(on|true|1) ]] &&
+    text='If you previously disabled Little Snitch, you can now enable it again' ||
+    text='You are advised to disable Little Snitch'
+
+    snitch_pause "$text"
+
+}
+
+# __END__
