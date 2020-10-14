@@ -21049,6 +21049,20 @@
       "ports": "80",
       "process": "any",
       "protocol": "tcp",
+      "remote-domains": "yoyo.org"
+    },
+    {
+      "action": "allow",
+      "ports": "443",
+      "process": "any",
+      "protocol": "tcp",
+      "remote-domains": "yoyo.org"
+    },
+    {
+      "action": "allow",
+      "ports": "80",
+      "process": "any",
+      "protocol": "tcp",
       "remote-domains": "ytimg.com"
     },
     {
