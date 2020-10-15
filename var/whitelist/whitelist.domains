@@ -1,5 +1,5 @@
 #! @brief    Whitelisted Internet domains (primarily second-level domains)
-#! @revision 2020-10-14 (Wed) 23:04:55
+#! @revision 2020-10-15 (Thu) 18:18:32
 #  vim: nospell spelllang=en
 
 118218.fr
@@ -616,6 +616,7 @@ inakasoftware.com
 inc.com
 indeed.com
 indepth.com
+indepth.net
 industrie-techno.com
 infogram.com
 infomaniak.ch
