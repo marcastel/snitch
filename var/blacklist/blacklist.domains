@@ -1,4 +1,4 @@
-#! @revision 2020-10-15 (Thu) 00:56:30
+#! @revision 2020-10-18 (Sun) 11:42:51
 #! @brief    Blacklisted domains
 #  vim: nospell spelllang=en
 
@@ -1714,7 +1714,6 @@ pgpartner.com
 phcdn.com
 pheedo.com
 pheegoab.click
-phncdn.com
 photo138.com
 phpmyvisites.net
 phprcdn.com
